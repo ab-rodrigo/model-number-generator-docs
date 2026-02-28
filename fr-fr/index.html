@@ -1,0 +1,1047 @@
+<!doctype html>
+<html lang="fr-fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    
+    <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+
+    <meta name="description" content="Model Number Generator for OpenCart 3/4 — Tutorial" />
+    <meta name="author" content="Rodrigo Barbosa" />
+    <title>Model Number Generator for OpenCart 4 — Tutorial</title>
+    
+    <link href="https://fonts.cdnfonts.com/css/inter" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link href="https://getbootstrap.com/docs/5.0/assets/css/docs.css" rel="stylesheet" crossorigin="anonymous" />
+    
+    <link href="../assets/css/style.css?v=1.0.1" rel="stylesheet" />
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+
+			<nav class="navbar navbar-expand-lg fixed-top bg-body border-bottom shadow-sm" aria-label="Model Number Generator pour OpenCart 4.x">
+				<div class="container-fluid d-flex align-items-center" style="min-height: 65px;">
+					
+					<div class="d-flex align-items-center">
+						<button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Ouvrir le menu">
+							<i class="fa-solid fa-bars-staggered fs-4"></i>
+						</button>
+						<a class="navbar-brand ms-2 ms-lg-0 d-flex flex-column lh-1" href="#">
+							<span class="fw-bold fs-4 text-body">Model Number Generator</span>
+							<small class="text-body-tertiary fw-normal" style="font-size: 0.75rem;">OpenCart 4.x</small>
+						</a>
+					</div>
+
+					<div class="d-flex align-items-center gap-2">
+						<button class="darkModeToggle btn btn-link text-body-secondary p-2" type="button" title="Changer le thème">
+							<i class="fa-solid fa-moon fs-5"></i>
+						</button>
+
+						<div class="dropdown">
+							<button class="btn btn-link text-body-secondary p-2 dropdown-toggle no-caret" type="button" data-bs-toggle="dropdown" aria-expanded="false" title="Changer la langue">
+								<i class="fa-solid fa-language fs-5"></i>
+							</button>
+							<ul class="dropdown-menu dropdown-menu-end shadow border-0 mt-2">
+								<li><h6 class="dropdown-header">Choisir la langue</h6></li>
+								<li><a class="dropdown-item d-flex justify-content-between align-items-center lang-option" href="../pt-br/index.html">Português <small class="text-muted">BR</small></a></li>
+								<li><a class="dropdown-item d-flex justify-content-between align-items-center lang-option" href="../pt-pt/index.html">Português <small class="text-muted">PT</small></a></li>
+								<li><a class="dropdown-item d-flex justify-content-between align-items-center lang-option" href="../en-gb/index.html">English <small class="text-muted">GB</small></a></li>
+								<li><a class="dropdown-item d-flex justify-content-between align-items-center lang-option" href="../en-us/index.html">English <small class="text-muted">US</small></a></li>
+								<li><a class="dropdown-item d-flex justify-content-between align-items-center lang-option" href="../es-es/index.html">Español <small class="text-muted">ES</small></a></li>
+								<li><a class="dropdown-item d-flex justify-content-between align-items-center lang-option" href="../fr-fr/index.html">Français <small class="text-muted">FR</small></a></li>
+								<li><a class="dropdown-item d-flex justify-content-between align-items-center lang-option" href="../it-it/index.html">Italiano <small class="text-muted">IT</small></a></li>
+							</ul>
+						</div>
+
+						<a class="btn btn-success rounded px-3 d-none d-sm-flex align-items-center fw-medium" target="_blank" rel="noopener" href="https://www.opencart.com/index.php?route=marketplace/extension&filter_member=Rodrigoabr">
+							<i class="fa-solid fa-download me-2"></i> Télécharger
+						</a>
+						<a class="btn btn-success rounded-circle d-sm-none p-2" target="_blank" rel="noopener" href="https://www.opencart.com/index.php?route=marketplace/extension&filter_member=Rodrigoabr" aria-label="Télécharger l'extension">
+							<i class="fa-solid fa-download"></i>
+						</a>
+					</div>
+				</div>
+			</nav>
+
+			<aside class="col-lg-3 col-xl-2 sidebar border-end pe-0" id="col-aside">
+				<div class="offcanvas-lg offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+					<div class="offcanvas-header bg-body-tertiary">
+						<h5 class="offcanvas-title fw-bold" id="offcanvasNavbarLabel">Documentation</h5>
+						<button type="button" class="btn-close offcanvas-dismiss" data-bs-dismiss="offcanvas" aria-label="Fermer"></button>
+					</div>
+					
+					<div class="offcanvas-body p-0">
+						<nav id="nav" class="w-100 p-3">
+							<ul class="nav flex-column gap-1">
+								
+								<li class="nav-item">
+									<a class="nav-link d-flex align-items-center px-2 offcanvas-dismiss" href="#section-welcome">
+										<div style="width: 24px;" class="text-center me-2"><i class="fa fa-home opacity-75"></i></div>
+										<span>Bienvenue</span>
+									</a>
+								</li>
+
+								<li class="nav-item">
+									<a class="nav-link d-flex align-items-center px-2 text-body-secondary" 
+									data-bs-toggle="collapse" href="#about-collapse" role="button" aria-expanded="false">
+										<div style="width: 24px;" class="text-center me-2"><i class="fa fa-info opacity-75"></i></div>
+										<span>À propos</span>
+										<i class="fa-solid fa-chevron-down ms-auto fs-xs" style="font-size: 0.7rem;"></i>
+									</a>
+									<div class="collapse" id="about-collapse">
+										<ul class="nav flex-column ms-4 border-start ps-3 py-1 gap-1">
+											<li><a class="nav-link py-1 small offcanvas-dismiss" href="#item-about-overview">Vue d'ensemble</a></li>
+											<li><a class="nav-link py-1 small offcanvas-dismiss" href="#item-about-features">Caractéristiques</a></li>
+											<li><a class="nav-link py-1 small offcanvas-dismiss" href="#item-about-support">Support & Licence</a></li>
+										</ul>
+									</div>
+								</li>
+
+								<li class="nav-item">
+									<a class="nav-link d-flex align-items-center px-2 offcanvas-dismiss" href="#section-structure">
+										<div style="width: 24px;" class="text-center me-2"><i class="fa-solid fa-shapes opacity-75"></i></div>
+										<span>Structure du Modèle</span>
+									</a>
+								</li>
+
+								<li class="nav-item">
+									<a class="nav-link d-flex align-items-center px-2 offcanvas-dismiss" href="#section-installation">
+										<div style="width: 24px;" class="text-center me-2"><i class="fa-solid fa-download opacity-75"></i></div>
+										<span>Installation</span>
+									</a>
+								</li>
+
+								<li class="nav-item">
+									<a class="nav-link d-flex align-items-center px-2 text-body-secondary" 
+									data-bs-toggle="collapse" href="#settings-collapse" role="button" aria-expanded="false">
+										<div style="width: 24px;" class="text-center me-2"><i class="fa-solid fa-gears opacity-75"></i></div>
+										<span>Configuration</span>
+										<i class="fa-solid fa-chevron-down ms-auto fs-xs" style="font-size: 0.7rem;"></i>
+									</a>
+									<div class="collapse" id="settings-collapse">
+										<ul class="nav flex-column ms-4 border-start ps-3 py-1 gap-1">
+											<li><a class="nav-link py-1 small offcanvas-dismiss" href="#section-settings">Accès aux réglages</a></li>
+											<li><a class="nav-link py-1 small offcanvas-dismiss" href="#item-settings-general">Paramètres généraux</a></li>
+											<li><a class="nav-link py-1 small offcanvas-dismiss" href="#item-settings-affix">Préfixe & Suffixe</a></li>
+											<li><a class="nav-link py-1 small offcanvas-dismiss" href="#item-settings-interval">Intervalle séquentiel</a></li>
+											<li><a class="nav-link py-1 small offcanvas-dismiss" href="#item-settings-template">Template du Modèle</a></li>
+										</ul>
+									</div>
+								</li>
+
+								<li class="nav-item">
+									<a class="nav-link d-flex align-items-center px-2 offcanvas-dismiss" href="#section-using">
+										<div style="width: 24px;" class="text-center me-2"><i class="fa-solid fa-arrow-down-1-9 opacity-75"></i></div>
+										<span>Générer des numéros</span>
+									</a>
+								</li>
+
+								<li class="nav-item mt-2 pt-2 border-top">
+									<a class="nav-link d-flex align-items-center px-2 text-danger offcanvas-dismiss" href="#section-uninstall">
+										<div style="width: 24px;" class="text-center me-2"><i class="fa-regular fa-trash-can"></i></div>
+										<span>Désinstallation</span>
+									</a>
+								</li>
+
+								<li class="nav-item">
+									<a class="nav-link d-flex align-items-center px-2 text-warning offcanvas-dismiss" href="#section-coffee">
+										<div style="width: 24px;" class="text-center me-2"><i class="fa-solid fa-mug-hot"></i></div>
+										<span>Un café ?</span>
+									</a>
+								</li>
+
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</aside>
+
+			<div class="col-lg-9 col-xl-10 col-xxl-10 d-flex align-content-between flex-wrap justify-content-center" id="col-main">
+				<main role="main" class="container mt-2">
+
+					<article id="section-welcome" class="welcome-section mt-4 mb-5 p-5 bg-primary text-white rounded shadow-lg text-center position-relative overflow-hidden">
+						<div class="position-relative z-index-1">
+							<i class="fa-solid fa-rocket fa-3x mb-3 opacity-75"></i>
+							<h1 class="display-5 fw-bold">Bienvenue</h1>
+							<p class="lead mx-auto" style="max-width: 700px;">
+								Apprenez à installer, configurer et automatiser la standardisation des numéros de modèle de vos produits.
+							</p>
+						</div>
+					</article>
+
+					<article id="section-about" class="about-section border-top px-0 py-5 text-body">
+
+					<section id="item-about-overview" class="mb-5">
+						<div class="row align-items-center">
+							<div class="col-lg-7">
+								<h2 class="h3 fw-bold mb-3"><i class="fa-solid fa-circle-info text-primary me-2"></i>Vue d'ensemble</h2>
+								<p class="text-body-secondary lead">
+									Éliminez le travail manuel et répétitif lors de la création de vos codes d'identification.
+								</p>
+								<p class="text-body-secondary">
+									Le module garantit des identifiants <strong>uniques et standardisés</strong> grâce à un système de modèles (Templates) intelligent. Avec cette solution, vous éradiquez les erreurs humaines et les doublons, établissant une structure logique et évolutive pour un contrôle total de votre inventaire.
+								</p>
+							</div>
+							<div class="col-lg-5">
+								<div class="p-4 bg-body-tertiary rounded h-100 border border-secondary-subtle">
+									<h2 class="h5 fw-bold"><i class="fa-solid fa-list-check text-primary me-2"></i>Prérequis</h2>
+									<p class="small text-body-secondary">Assurez-vous d'avoir les permissions pour :</p>
+									<ul class="list-unstyled small fw-bold text-primary">
+										<li><i class="fa-solid fa-check me-2"></i>Installateur & Gestionnaire d'extensions</li>
+										<li><i class="fa-solid fa-check me-2"></i>Catalogue de produits</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+                        <div class="row mt-5">
+                            <div class="col-12">
+                                <div class="card shadow-sm border-secondary-subtle">
+                                    <div class="card-header bg-body-tertiary py-3">
+                                        <h3 class="h5 fw-bold mb-0 text-center"><i class="fa-solid fa-layer-group text-primary me-2"></i>Comparaison des Versions</h3>
+                                    </div>
+                                    <div class="table-responsive">
+                                        <table class="table table-hover align-middle mb-0 table-striped">
+                                            <thead class="table-light small text-uppercase">
+                                                <tr>
+                                                    <th class="ps-4" style="width: 40%;"></th>
+                                                    <th class="text-center" style="width: 30%;">Gratuit</th>
+                                                    <th class="text-center bg-primary bg-opacity-10 text-primary" style="width: 30%;">Pro</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="text-body-secondary">
+                                                <tr>
+                                                    <td class="ps-4 fw-medium text-body">Verrouiller le champ Modèle</td>
+                                                    <td class="text-center small"><i class="fa-solid fa-circle-xmark text-danger me-1"></i></td>
+                                                    <td class="text-center fw-bold bg-primary bg-opacity-10 text-primary"><i class="fa-solid fa-circle-check text-success me-1"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="ps-4 fw-medium text-body">Modèles (Templates)</td>
+                                                    <td class="text-center small">Seulement 1</td>
+                                                    <td class="text-center fw-bold bg-primary bg-opacity-10 text-primary">Illimités</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="ps-4 fw-medium text-body">Intervalles Numériques</td>
+                                                    <td class="text-center small">Seulement 1</td>
+                                                    <td class="text-center fw-bold bg-primary bg-opacity-10 text-primary">Illimités</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="ps-4 fw-medium text-body">Préfixes</td>
+                                                    <td class="text-center small"><i class="fa-solid fa-circle-xmark text-danger me-1"></i></td>
+                                                    <td class="text-center fw-bold bg-primary bg-opacity-10 text-primary">Illimités</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="ps-4 fw-medium text-body">Suffixes</td>
+                                                    <td class="text-center small"><i class="fa-solid fa-circle-xmark text-danger me-1"></i></td>
+                                                    <td class="text-center fw-bold bg-primary bg-opacity-10 text-primary">Illimités</td>
+                                                </tr>
+                                            </tbody>
+                                            <tfoot>
+                                                <tr>
+                                                    <td colspan="2"></td>
+                                                    <td class="bg-primary bg-opacity-10 p-3 text-center border-top">
+                                                        <a href="https://www.opencart.com/index.php?route=marketplace/extension&filter_member=Rodrigoabr" target="_blank" class="btn btn-primary btn-sm fw-bold w-100 shadow-sm">
+                                                            <i class="fa-solid fa-crown me-2 text-warning"></i>Passer à la version Pro
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+					</section>
+
+					<section id="item-about-features" class="mb-5">
+						<h2 class="h3 fw-bold mb-4 text-center text-body">Caractéristiques principales</h2>
+						
+						<div class="row g-3 text-body">
+							
+							<div class="col-md-6 col-lg-4">
+								<div class="card h-100 bg-body border-primary-subtle shadow-sm border-2">
+									<div class="card-body">
+										<div class="d-flex justify-content-between align-items-start">
+											<i class="fa-solid fa-magic-wand-sparkles text-primary mb-3 fs-4"></i>
+											<span class="badge bg-primary rounded-pill small">Essentiel</span>
+										</div>
+										<h3 class="h6 fw-bold">Remplissage auto intelligent</h3>
+										<p class="small text-body-secondary mb-0">Le système identifie le modèle par défaut et remplit automatiquement le champ "Modèle" lors de l'ouverture d'un nouveau formulaire, économisant temps et clics.</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-6 col-lg-4">
+								<div class="card h-100 bg-body border-success-subtle shadow-sm border-2">
+									<div class="card-body">
+										<div class="d-flex justify-content-between align-items-start">
+											<i class="fa-solid fa-shield-halved text-success mb-3 fs-4"></i>
+											<span class="badge bg-success rounded-pill small">Intégrité</span>
+										</div>
+										<h3 class="h6 fw-bold">Sécurité & Unicité</h3>
+										<p class="small text-body-secondary mb-0">
+											Garantit une <strong>**identité unique**</strong> pour chaque produit, évitant les numéros en double. Verrouillez le champ <strong>Modèle</strong> pour éliminer les erreurs humaines.
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-6 col-lg-4">
+								<div class="card h-100 bg-body border-warning-subtle shadow-sm">
+									<div class="card-body">
+										<div class="d-flex justify-content-between align-items-start">
+											<i class="fa-solid fa-arrows-rotate text-warning mb-3 fs-4"></i>
+											<span class="badge bg-warning rounded-pill small">Important</span>
+										</div>
+										<h3 class="h6 fw-bold">Traitement rétroactif</h3>
+										<p class="small text-body-secondary mb-0">Standardisez les articles existants de la boutique. Le module génère et applique en toute sécurité des numéros de modèle à vos produits actuels.</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-6 col-lg-4">
+								<div class="card h-100 bg-body border-secondary-subtle shadow-sm">
+									<div class="card-body">
+										<i class="fa-solid fa-layer-group text-primary mb-3 fs-4"></i>
+										<h3 class="h6 fw-bold">Modèles dynamiques</h3>
+										<p class="small text-body-secondary mb-0">Combinez préfixes, intervalles et suffixes para créer des règles distinctes par département ou catégorie de produits.</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-6 col-lg-4">
+								<div class="card h-100 bg-body border-info-subtle shadow-sm">
+									<div class="card-body">
+										<i class="fa-solid fa-globe text-info mb-3 fs-4"></i>
+										<h3 class="h6 fw-bold">Interface multilingue</h3>
+										<p class="small text-body-info mb-0">Interface intuitive avec des traductions natives en EN, PT, FR, ES et IT.</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-6 col-lg-4 text-center">
+								<div class="card h-100 bg-primary-subtle border-0 shadow-sm">
+									<div class="card-body d-flex flex-column justify-content-center align-items-center">
+										<i class="fa-solid fa-circle-nodes text-primary mb-2 fs-3"></i>
+										<h3 class="h6 fw-bold text-primary-emphasis">Évolutivité totale</h3>
+										<p class="smaller text-primary-emphasis opacity-75 mb-0">Gérez plusieurs règles simultanément sans perte de performance dans les grandes bases de données.</p>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					</section>
+
+					<section id="item-about-support" class="mb-5">
+						<h2 class="h3 fw-bold mb-4 text-center text-body">Support & Licence</h2>
+						<div class="row g-4 mt-2">
+							<div class="col-md-6">
+								<div class="p-4 bg-body-tertiary rounded h-100 border border-secondary-subtle">
+									<h2 class="h5 fw-bold"><i class="fa-solid fa-headset text-primary me-2"></i>Support</h2>
+									<p class="small text-body-secondary">Besoin d'aide ?</p>
+									<a href="https://www.opencart.com/index.php?route=marketplace/extension&filter_member=Rodrigoabr" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill px-3">
+										Obtenir du support <i class="fa-solid fa-external-link ms-1 small"></i>
+									</a>
+								</div>
+							</div>
+
+							<div class="col-md-6">
+								<div class="p-4 bg-body-tertiary rounded h-100 border border-secondary-subtle">
+									<h2 class="h5 fw-bold"><i class="fa-solid fa-scale-balanced text-primary me-2"></i>Licence</h2>
+									<p class="small text-body-secondary mb-3">Logiciel distribué selon les termes :</p>
+									<a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank" class="text-decoration-none fw-bold small">
+										GPL v3.0 <i class="fa-solid fa-arrow-right-long ms-1"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					</article>
+
+					<article id="section-structure" class="structure-section border-top px-0 py-5 text-body">
+                        <header class="mb-5 text-center">
+                            <div class="text-start">
+                                <h2 class="h3 fw-bold"><i class="fa-solid fa-sitemap text-primary me-2"></i>Structure du Numéro de Modèle</h2>
+                                <p class="text-body-secondary lead mx-auto">
+                                    La génération de code est modulaire et flexible, divisée en trois composants qui garantissent une traçabilité complète et l'unicité.
+                                </p>
+                            </div>
+                            
+                            <div class="d-inline-flex flex-wrap justify-content-center bg-body-tertiary p-3 rounded border shadow-sm mt-3 text-center">
+                                <div class="px-2 border-end border-secondary-subtle"><small class="d-block text-uppercase text-primary fw-bold" style="font-size: 0.65rem;">Préfixe</small><span class="h5 font-monospace mb-0">ABC-XYZ-</span></div>
+                                <div class="px-2 border-end border-secondary-subtle"><small class="d-block text-uppercase text-success fw-bold" style="font-size: 0.65rem;">Séquentiel</small><span class="h5 font-monospace mb-0 text-success">0001</span></div>
+                                <div class="px-2"><small class="d-block text-uppercase text-primary fw-bold" style="font-size: 0.65rem;">Suffixe</small><span class="h5 font-monospace mb-0">-ASD-QWE</span></div>
+                            </div>
+                        </header>
+
+                        <div class="row g-4">
+                            <div class="col-lg-4">
+                                <div class="card h-100 bg-body-tertiary border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <h3 class="h5 fw-bold mb-3 text-primary"><i class="fa-solid fa-indent me-2"></i>Préfixes</h3>
+                                        <p class="small text-body-secondary">Macro-identifiants qui précèdent le numéro séquentiel (ex: <code>ABC-XYZ-</code>).</p>
+                                        <ul class="list-unstyled small mb-0">
+                                            <li class="mb-2"><i class="fa-solid fa-check text-primary me-2"></i><strong>Modulaire:</strong> Segmenté en plusieurs blocs.</li>
+                                            <li class="mb-2"><i class="fa-solid fa-check text-primary me-2"></i><strong>Évolutif:</strong> Ajoutez autant de blocs que vous le souhaitez.</li>
+                                            <li class="mb-2"><i class="fa-solid fa-check text-primary me-2"></i><strong>Optionnel:</strong> À utiliser uniquement si nécessaire.</li>
+                                            <li><i class="fa-solid fa-check text-primary me-2"></i><strong>Connexion:</strong> Nécessite um séparateur avant le chiffre.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="card h-100 bg-body border-success-subtle shadow-sm">
+                                    <div class="card-body">
+                                        <h3 class="h5 fw-bold mb-3 text-success"><i class="fa-solid fa-arrow-down-1-9 me-2"></i>Plage Numérique</h3>
+                                        <p class="small text-body-secondary">Le cœur séquentiel obligatoire (ex: <code>0001</code>), garantissant l'unicité.</p>
+                                        <ul class="list-unstyled small mb-0">
+                                            <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i><strong>Padding:</strong> Remplissage de zéros à gauche.</li>
+                                            <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i><strong>Variable:</strong> Longueur de chiffres personnalisable.</li>
+                                            <li><i class="fa-solid fa-check text-success me-2"></i><strong>Plages:</strong> Règles spécifiques par catégorie.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="card h-100 bg-body-tertiary border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <h3 class="h5 fw-bold mb-3 text-primary"><i class="fa-solid fa-outdent me-2"></i>Suffixes</h3>
+                                        <p class="small text-body-secondary">Attributs finaux pour détailler les versions ou le statut (ex: <code>-ASD-QWE</code>).</p>
+                                        <ul class="list-unstyled small mb-0">
+                                            <li class="mb-2"><i class="fa-solid fa-check text-primary me-2"></i><strong>Modulaire:</strong> Segmenté en plusieurs blocs.</li>
+                                            <li class="mb-2"><i class="fa-solid fa-check text-primary me-2"></i><strong>Évolutif:</strong> Ajoutez autant de blocs que souhaité.</li>
+                                            <li class="mb-2"><i class="fa-solid fa-check text-primary me-2"></i><strong>Optionnel:</strong> À utiliser uniquement si nécessaire.</li>
+                                            <li><i class="fa-solid fa-check text-primary me-2"></i><strong>Connexion:</strong> Nécessite um séparateur après le chiffre.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-5">
+                            <div class="p-4 bg-warning-subtle rounded shadow-sm mb-4">
+                                <h3 class="h6 fw-bold text-warning-emphasis"><i class="fa-solid fa-triangle-exclamation me-2"></i>Attention: Sensibilité aux Séparateurs</h3>
+                                <p class="small text-warning-emphasis mb-3">
+                                    Le système traite chaque caractère littéralement, liant la plage numérique à la combinaison unique de préfixes, suffixes et séparateurs. 
+                                    <strong>Tout changement — comme remplacer un trait d'union (-) par une barre oblique (/) — définit une nouvelle identité</strong>, redémarrant automatiquement la séquence numérique pour cet identifiant spécifique.
+                                </p>
+                                
+                                <div class="table-responsive">
+                                    <table class="table table-sm table-borderless mb-0">
+                                        <tbody class="small">
+                                            <tr>
+                                                <td style="width: 210px;"><code class="text-primary-emphasis bg-primary-subtle px-2 py-1 rounded border border-primary-subtle">ABC-XYZ-0001-ASD-QWE</code></td>
+                                                <td class="text-body-secondary"><i class="fa-solid fa-arrow-right me-1 opacity-50"></i> Modèle de référence.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><code class="text-danger-emphasis bg-danger-subtle px-2 py-1 rounded border border-danger-subtle">ABC<span class="fw-bold text-decoration-underline">/</span>XYZ-0001-ASD-QWE</code></td>
+                                                <td class="text-body-secondary"><i class="fa-solid fa-xmark text-danger me-1"></i> La barre oblique modifie le préfixe : le compteur redémarre pour ce nouveau groupe.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="mt-5 p-4 bg-body-tertiary rounded shadow-sm">
+                                <h3 class="h6 mb-3 fw-bold text-body">
+                                    <i class="fa-solid fa-lightbulb text-warning me-2"></i> Conseil de Standardisation :
+                                </h3>
+                                <p class="small text-body-secondary mb-3">
+                                    Pour maintenir la lisibilité sur les étiquettes et les rapports, utilisez des acronymes courts pour représenter les catégories ou les marques.
+                                </p>
+                                
+                                <div class="d-flex flex-column gap-2">
+                                    <div class="small">
+                                        <i class="fa-solid fa-check text-success me-2"></i>
+                                        <span class="text-body-secondary">Recommandé :</span>
+                                        <code class="text-primary-emphasis bg-primary-subtle px-2 py-1 rounded border border-primary-subtle ms-1">
+                                            HW-MEM-DDR4-001
+                                        </code>
+                                        <small class="text-muted ms-2">(Hardware - Memory - DDR4)</small>
+                                    </div>
+
+                                    <div class="small">
+                                        <i class="fa-solid fa-xmark text-danger me-2"></i>
+                                        <span class="text-body-secondary">À éviter :</span>
+                                        <code class="text-danger-emphasis bg-danger-subtle px-2 py-1 rounded border border-danger-subtle ms-1">
+                                            HARDWARE-MEMORY-DDR4-001
+                                        </code>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+					<article id="section-installation" class="installation-section border-top px-0 py-5 text-body">
+                        <header class="mb-5">
+                            <h2 class="h3 fw-bold">
+                                <i class="fa-solid fa-download text-primary me-2"></i>Installation
+                            </h2>
+                            <p class="text-body-secondary lead">Suivez les étapes ci-dessous pour intégrer le module en toute sécurité à votre système OpenCart.</p>
+                        </header>
+
+                        <div class="row g-4">
+                            <div class="col-md-4">
+                                <div class="card h-100 bg-body-tertiary border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <span class="badge rounded-pill bg-primary me-2 px-3 py-2">01</span>
+                                            <h3 class="h6 mb-0 fw-bold">Téléchargement</h3>
+                                        </div>
+                                        <p class="small text-body-secondary mb-3">
+                                            Obtenez le module officiel directement sur le Marketplace OpenCart :
+                                        </p>
+                                        <a href="https://www.opencart.com/index.php?route=marketplace/extension&filter_member=Rodrigoabr" target="_blank" class="btn btn-sm btn-outline-primary w-100 rounded-pill">
+                                            <i class="fa-solid fa-cloud-arrow-down me-1"></i> Page Officielle
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card h-100 bg-body-tertiary border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <span class="badge rounded-pill bg-primary me-2 px-3 py-2">02</span>
+                                            <h3 class="h6 mb-0 fw-bold">Transfert (Upload)</h3>
+                                        </div>
+                                        <p class="small text-body-secondary">
+                                            Dans l'administration de votre boutique, allez dans <strong>Extensions > Installateur</strong>. Cliquez sur 
+                                            <i class="fa-solid fa-upload bg-primary text-white align-middle rounded-1" style="font-size: 0.65rem;padding: 4px;"></i> <strong>Charger</strong> et sélectionnez le fichier téléchargé.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card h-100 bg-body-tertiary border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <span class="badge rounded-pill bg-primary me-2 px-3 py-2">03</span>
+                                            <h3 class="h6 mb-0 fw-bold">Activation</h3>
+                                        </div>
+                                        <p class="small text-body-secondary">
+                                            Localisez le module dans la liste des extensions et cliquez sur l'icône 
+                                            <i class="fa-solid fa-square-plus text-success fs-5 align-middle"></i> 
+                                            <strong>Installer</strong> pour l'activer.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-5 p-3 bg-info-subtle rounded d-flex align-items-center">
+                            <i class="fa-solid fa-circle-info text-info fs-4 me-3"></i>
+                            <div class="text-info-emphasis small">
+                                <strong>Conseil technique :</strong> Après l'activation, n'oubliez pas d'aller dans <strong>Extensions > Modifications</strong> et de cliquer sur le bouton <strong>Actualiser</strong> (icône bleue) pour vider le cache du système.
+                            </div>
+                        </div>
+                    </article>
+
+					<article id="section-settings" class="settings-section border-top px-0 py-5 text-body">
+                        <header class="mb-5">
+                            <h2 class="h3 fw-bold"><i class="fa-solid fa-gear text-primary me-2"></i>Accès aux Paramètres</h2>
+                            <p class="text-body-secondary lead">Après l'installation, suivez ce flux de travail para configurer votre automatisation.</p>
+                        </header>
+
+                        <div class="row g-3 mb-5">
+                            <div class="col-md-4">
+                                <div class="p-3 bg-body-tertiary border rounded-3 h-100">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <span class="badge rounded-pill bg-primary me-2 px-3 py-2">01</span>
+                                        <h3 class="h6 mb-0 fw-bold">Menu Latéral</h3>
+                                    </div>
+                                    <p class="smaller text-body-secondary mb-0">Allez dans <strong>Extensions > Extensions</strong>.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="p-3 bg-body-tertiary border rounded-3 h-100">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <span class="badge rounded-pill bg-primary me-2 px-3 py-2">02</span>
+                                        <h3 class="h6 mb-0 fw-bold">Filtrer</h3>
+                                    </div>
+                                    <p class="smaller text-body-secondary mb-0">Sélectionnez le type d'extension <strong>Modules</strong>.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="p-3 bg-body-tertiary border rounded-3 h-100">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <span class="badge rounded-pill bg-primary me-2 px-3 py-2">03</span>
+                                        <h3 class="h6 mb-0 fw-bold">Modifier</h3>
+                                    </div>
+                                    <p class="smaller text-body-secondary mb-0">Cliquez sur <i class="fa-solid fa-pencil-square text-primary fs-5 align-middle"></i> <strong>Modifier</strong> pour ouvrir le panneau.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <section id="item-settings-general" class="mb-5 pt-4">
+                            <h3 class="h4 fw-bold mb-4 border-bottom pb-2">1. Paramètres Généraux</h3>
+                            <div class="row align-items-center g-4">
+                                <div class="col-lg-6">
+                                    <figure class="mb-0">
+                                        <img src="../assets/images/fr-fr/docs-config-general-tab-fr-fr.png" alt="Onglet Général" class="img-fluid shadow-sm rounded border" loading="lazy" />
+                                        <figcaption class="small text-muted mt-2 font-italic">
+                                            <i class="fa-solid fa-magnifying-glass me-1"></i> Configuration Générale
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="table-responsive">
+                                        <table class="table table-sm align-middle border">
+                                            <thead class="table-light">
+                                                <tr><th>Paramètre</th><th>Fonction</th></tr>
+                                            </thead>
+                                            <tbody class="small">
+                                                <tr><td><strong>Remplissage auto</strong></td><td class="text-body-secondary">Génère instantanément le modèle lors de la création de produits.</td></tr>
+                                                <tr><td><strong>Empêcher l'édition</strong></td><td class="text-body-secondary">Verrouille le champ <strong>Modèle</strong> pour éviter les modifications manuelles.</td></tr>
+                                                <tr><td><strong>État</strong></td><td class="text-body-secondary">Active ou désactive le module.</td></tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section id="item-settings-affix" class="mb-5 pt-4">
+                            <h3 class="h4 fw-bold mb-4 border-bottom pb-2">2. Préfixe et Suffixe</h3>
+                            <p class="text-body-secondary small mb-4">Ces onglets vous permettent de composer les éléments de texte ou de date entourant le numéro séquentiel.</p>
+                            
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="sticky-lg-top" style="top: 2rem;">
+                                        <figure class="mb-0">
+                                            <img src="../assets/images/fr-fr/docs-config-prefix-tab-fr-fr.png" alt="Onglet Préfixe" class="img-fluid shadow-sm rounded border" loading="lazy" />
+                                            <figcaption class="small text-muted mt-2 font-italic">
+                                                <i class="fa-solid fa-magnifying-glass me-1"></i> Configuration du Préfixe et Suffixe
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="mb-4">
+                                        <h4 class="h6 fw-bold text-primary mb-2"><i class="fa-solid fa-sliders me-2"></i>Paramètres de Groupe</h4>
+                                        <div class="table-responsive">
+                                            <table class="table table-sm align-middle border">
+                                                <thead class="table-light">
+                                                    <tr><th style="width: 35%;">Paramètre</th><th>Fonction</th></tr>
+                                                </thead>
+                                                <tbody class="small text-body-secondary">
+                                                    <tr>
+                                                        <td><strong>Nom</strong></td>
+                                                        <td>Identification interne. <br>
+                                                            <small class="text-muted italic">Ex: Électronique, Vêtements.</small>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><strong>Séparateur</strong></td>
+                                                        <td>Caractère qui relie ce groupe au numéro séquentiel.</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <h4 class="h6 fw-bold text-primary mb-2"><i class="fa-solid fa-layer-group me-2"></i>Composition de l'Élément</h4>
+                                        <div class="table-responsive">
+                                            <table class="table table-sm align-middle border text-body-secondary">
+                                                <thead class="table-light">
+                                                    <tr><th style="width: 35%;">Paramètre</th><th>Description</th></tr>
+                                                </thead>
+                                                <tbody class="small">
+                                                    <tr>
+                                                        <td><strong>Type</strong></td>
+                                                        <td>Définit si l'élément sera un <strong>Texte Fixe</strong> ou une <strong>Date Dynamique</strong>.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><strong>Contenu (Texte)</strong></td>
+                                                        <td>La valeur textuelle à afficher (ex: <code>PROD</code>).</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><strong>Format (Date)</strong></td>
+                                                        <td>Le format de date souhaité (ex: <code>Année (2 chiffres) + mois</code>).</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><strong>Séparateur</strong></td>
+                                                        <td>Caractère qui relie cet élément au suivant au sein du même préfixe.</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="mt-4 p-3 bg-body-tertiary border rounded-3 d-flex align-items-center shadow-sm">
+                                            <i class="fa-solid fa-lightbulb text-warning fs-4 me-3"></i>
+                                            <p class="small mb-0 text-body-secondary">
+                                                <strong>Astuce :</strong> Vous pouvez ajouter plusieurs éléments pour créer des préfixes complexes, tels que <code>ANNEE-CATEGORIE-</code>.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section id="item-settings-interval" class="mb-5 pt-4">
+                            <h3 class="h4 fw-bold mb-4 border-bottom pb-2">3. Intervalle Séquentiel</h3>
+                            
+                            <div class="row align-items-center g-4">
+                                <div class="col-lg-6">
+                                    <figure class="mb-0">
+                                        <img src="../assets/images/fr-fr/docs-config-interval-tab-fr-fr.png" alt="Onglet Intervalles" class="img-fluid shadow-sm rounded border" loading="lazy" />
+                                        <figcaption class="small text-muted mt-2 font-italic">
+                                            <i class="fa-solid fa-magnifying-glass me-1"></i> Configuration de la Plage Numérique Séquentielle
+                                        </figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="table-responsive">
+                                        <table class="table table-sm align-middle border">
+                                            <thead class="table-light">
+                                                <tr>
+                                                    <th style="width: 35%;">Paramètre</th>
+                                                    <th>Description</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="small text-body-secondary">
+                                                <tr>
+                                                    <td><strong>Nom</strong></td>
+                                                    <td>Identification interne. <br>
+                                                        <small class="text-muted italic">Ex: Compteur Général, Lot 2024.</small>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>Zéros non significatifs</strong></td>
+                                                    <td>
+                                                        Active le remplissage (padding) pour une standardisation visuelle.
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>Longueur</strong></td>
+                                                    <td>Nombre total de chiffres. <br>
+                                                        <small class="text-muted">Ex: Une longueur de 4 transforme "1" en "0001".</small>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>Min / Max</strong></td>
+                                                    <td>Définit le point de départ et la limite finale du comptage.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt-4 p-3 bg-body-tertiary border rounded-3 d-flex align-items-center shadow-sm">
+                                <i class="fa-solid fa-shield-check text-success fs-4 me-3"></i>
+                                <p class="small mb-0 text-body-emphasis">
+                                    <i class="fa-solid fa-lightbulb text-success me-2"></i><strong class="text-success">Note de Sécurité :</strong> Le système utilise ces limites pour garantir la <strong>non-duplication</strong>. Une fois la valeur maximale atteinte, une alerte empêchera de nouveaux enregistrements pour garantir l'intégrité des données.
+                                </p>
+                            </div>
+                        </section>
+                        
+                        <section id="item-settings-template" class="mb-5 pt-4">
+                            <h3 class="h4 fw-bold mb-4 border-bottom pb-2">4. Modèle (Template)</h3>
+                            <div class="row align-items-center g-4">
+                                <div class="col-lg-6">
+                                    <figure class="mb-0">
+                                        <img src="../assets/images/fr-fr/docs-config-template-tab-fr-fr.png" alt="Onglet Modèle" class="img-fluid shadow-sm rounded border" loading="lazy" />
+                                        <figcaption class="small text-muted mt-2 font-italic">
+                                            <i class="fa-solid fa-magnifying-glass me-1"></i> Interface d'assemblage de l'identifiant final
+                                        </figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="table-responsive">
+                                        <table class="table table-sm align-middle border">
+                                            <thead class="table-light">
+                                                <tr>
+                                                    <th style="width: 30%;">Paramètre</th>
+                                                    <th>Description</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="small text-body-secondary">
+                                                <tr>
+                                                    <td><strong>Nom</strong></td>
+                                                    <td>Identification interne. <br>
+                                                        <small class="text-muted italic">Ex: Souris, Clavier, Feuilles A4.</small>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>Préfixe</strong></td>
+                                                    <td>Lien vers le groupe de <strong>Préfixe</strong> configuré.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>Intervalle</strong></td>
+                                                    <td>Lien vers la règle de <strong>Numérotation Séquentielle</strong>.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>Suffixe</strong></td>
+                                                    <td>Lien vers le groupe de <strong>Suffixe</strong> configuré.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>Par défaut</strong></td>
+                                                    <td>Définit ce modèle comme principal pour le <strong>remplissage auto</strong>.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt-4 p-3 bg-body-tertiary border rounded-3 d-flex align-items-center shadow-sm">
+                                <div class="me-3">
+                                    <i class="fa-solid fa-circle-nodes text-primary fs-4"></i>
+                                </div>
+                                <div>
+                                    <p class="small mb-0 text-body-emphasis">
+                                        <strong class="text-primary">Astuce de Flux :</strong> 
+                                        <span class="text-body-secondary">
+                                            Le Modèle est l'endroit où vous "assemblez" les paramètres précédents. Assurez-vous que les groupes de Préfixe, Intervalle et Suffixe ont déjà été créés avant de finaliser cette étape.
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                    </article>
+
+					<article id="section-using" class="using-section border-top px-0 py-5 text-body">
+                        <header class="mb-5">
+                            <h2 class="h3 fw-bold">
+                                <i class="fa-solid fa-hashtag text-primary me-2"></i>Génération de Numéros
+                            </h2>
+                            <p class="text-body-secondary lead">Suivez les étapes ci-dessous pour appliquer une numérotation automatique à vos produits.</p>
+                        </header>
+
+                        <div class="mt-4">
+                            <figure class="mb-5">
+                                <img src="../assets/images/fr-fr/docs-using-fr-fr.png" alt="Interface de génération de modèle" class="img-fluid shadow-sm rounded border" loading="lazy" />
+                                <figcaption class="small text-muted mt-2 font-italic">
+                                    <i class="fa-solid fa-magnifying-glass me-1"></i> Vue du champ Modèle avec les commandes de template intégrées
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="row g-4">
+                            <div class="col-md-3">
+                                <div class="card h-100 bg-body-tertiary border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <span class="badge rounded-pill bg-primary me-2 px-3 py-2">01</span>
+                                            <h3 class="h6 mb-0 fw-bold">Navigation</h3>
+                                        </div>
+                                        <p class="small text-body-secondary mb-3">
+                                            Dans le menu latéral, allez dans <strong>Catalogue</strong> et sélectionnez l'option <strong>Produits</strong>.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="card h-100 bg-body-tertiary border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <span class="badge rounded-pill bg-primary me-2 px-3 py-2">02</span>
+                                            <h3 class="h6 mb-0 fw-bold">Accès</h3>
+                                        </div>
+                                        <p class="small text-body-secondary">
+                                            Cliquez sur <i class="fa-solid fa-pencil-square text-primary align-middle" style="font-size: 1.35rem;"></i> <strong>Modifier</strong> sur un produit ou sur le bouton <i class="fa-solid fa-plus-circle bg-primary text-white align-middle rounded-1" style="font-size: 0.65rem;padding:5px;"></i> <strong>Ajouter</strong>.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="card h-100 bg-body-tertiary border-0 shadow-sm">
+                                    <div class="card-body">
+                                    <div class="d-flex align-items-center mb-3">
+                                            <span class="badge rounded-pill bg-primary me-2 px-3 py-2">03</span>
+                                            <h3 class="h6 mb-0 fw-bold">Emplacement</h3>
+                                        </div>
+                                        <p class="small text-body-secondary">
+                                            Allez dans l'onglet <strong>Données</strong> et localisez le champ <strong>Modèle</strong> dans le formulaire.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="card h-100 bg-body-tertiary border-0 shadow-sm">
+                                    <div class="card-body">
+                                    <div class="d-flex align-items-center mb-3">
+                                            <span class="badge rounded-pill bg-primary me-2 px-3 py-2">04</span>
+                                            <h3 class="h6 mb-0 fw-bold">Générer</h3>
+                                        </div>
+                                        <p class="small text-body-secondary">
+                                            Sélectionnez le template et cliquez sur le bouton <strong>Générer</strong> 
+                                            <i class="fa-solid fa-arrow-up bg-primary text-white align-middle rounded-1" style="font-size: 0.7rem;padding: 5px 6px;"></i>. Le champ <strong>Modèle</strong> sera rempli.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-4 p-3 bg-body-tertiary border rounded-3 d-flex align-items-center shadow-sm">
+                            <div class="me-3">
+                                <span class="text-primary fs-4">
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </div>
+                            <div>
+                                <p class="small mb-0 text-body-emphasis">
+                                    <strong class="text-primary">Astuce Pratique :</strong> Si vous sélectionnez un template non défini par défaut et cochez l'option <strong>"Définir par défaut"</strong>, le système enregistrera automatiquement votre choix lors de la génération.
+                                </p>
+                            </div>
+                        </div>
+
+                    </article>
+
+					<article id="section-uninstall" class="uninstall-section border-top px-0 py-5 text-body">
+                        <header class="mb-5">
+                            <h2 class="h3 fw-bold">
+                                <i class="fa-solid fa-trash-can text-danger me-2"></i>Désinstallation
+                            </h2>
+                            <p class="text-body-secondary lead">Suivez les étapes ci-dessous pour une désinstallation propre et sécurisée.</p>
+                        </header>
+
+                        <div class="row g-4 mb-5">
+                            <div class="col-md-6 col-lg-4">
+                                <div class="card h-100 bg-body-tertiary border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <span class="badge rounded-pill bg-danger me-2 px-3 py-2">01</span>
+                                            <h3 class="h6 mb-0 fw-bold">Désactiver</h3>
+                                        </div>
+                                        <p class="small text-body-secondary mb-0">
+                                            Allez dans <strong>Extensions > Extensions</strong>, filtrez par <strong>Modules</strong>, localisez le module et cliquez sur 
+                                            <i class="fa-solid fa-minus-circle bg-danger text-white align-middle rounded-1" style="font-size: 0.65rem;padding:5px;"></i> 
+                                            <strong>Désinstaller</strong>.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4">
+                                <div class="card h-100 bg-body-tertiary border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <span class="badge rounded-pill bg-danger me-2 px-3 py-2">02</span>
+                                            <h3 class="h6 mb-0 fw-bold">Désinstaller</h3>
+                                        </div>
+                                        <p class="small text-body-secondary mb-0">
+                                            Localisez le module dans la liste des extensions installées et cliquez sur l'icône 
+                                            <i class="fa-solid fa-minus-circle bg-warning text-white align-middle rounded-1" style="font-size: 0.65rem;padding:5px;"></i>
+                                            <strong>Désinstaller</strong>.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4">
+                                <div class="card h-100 bg-body-tertiary border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <span class="badge rounded-pill bg-danger me-2 px-3 py-2">03</span>
+                                            <h3 class="h6 mb-0 fw-bold">Supprimer</h3>
+                                        </div>
+                                        <p class="small text-body-secondary mb-0">
+                                            Toujours dans la liste des extensions installées, cliquez sur 
+                                            <i class="fa-regular fa-trash-can bg-danger text-white align-middle rounded-1" style="font-size: 0.65rem;padding: 4px 5px;"></i> <strong>Supprimer</strong>.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="alert alert-warning border-start border-4 border-warning rounded-3 shadow-sm mt-4">
+                            <div class="d-flex">
+                                <div class="me-3">
+                                    <i class="fa-solid fa-triangle-exclamation fs-3"></i>
+                                </div>
+                                <div>
+                                    <h4 class="h6 fw-bold mb-1">Qu'advient-il des données ?</h4>
+                                    <p class="small mb-0 text-body-secondary">
+                                        La désinstallation supprime les paramètres et les fichiers du module. Cependant, les <strong>numéros de modèle déjà générés</strong> pour vos produits resteront enregistrés dans la base de données pour éviter toute perte d'intégrité de vos dossiers.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+					<article class="article px-0 py-5 border-top text-center" id="section-coffee">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8 col-lg-6">
+                                <div class="card bg-body-tertiary border-0 shadow-sm rounded-4">
+                                    <div class="card-body p-4 p-lg-5">
+                                        <div class="mb-3">
+                                            <i class="fa-solid fa-mug-hot text-warning fs-1"></i>
+                                        </div>
+                                        
+                                        <h2 class="h4 fw-bold mb-3">Le module vous plaît ?</h2>
+                                        
+                                        <p class="text-body-secondary mb-4">
+                                            Je sais, c'est un module payant, mais s'il vous simplifie la vie et optimise votre catalogue, que diriez-vous de m'offrir un café ? 
+                                            Cela aide à maintenir un code propre, un support rapide et fournit la caféine nécessaire pour les prochaines mises à jour !
+                                        </p>
+
+                                        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center align-items-center">
+                                            <a href="https://www.paypal.com/donate/?hosted_button_id=SPQH2B32XBJUW" 
+                                            target="_blank" 
+                                            rel="noopener" 
+                                            class="btn btn-primary btn-lg px-4 rounded-pill fw-bold shadow-sm">
+                                                <i class="fa-brands fa-paypal me-2"></i>
+                                                M'offrir un café
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+					<footer class="footer mt-5 pb-5 pt-4 border-top">
+                        <div class="container text-center">
+                            <p class="small text-body-secondary mb-1">
+                                &copy; <script>document.write(new Date().getFullYear());</script> 
+                                <a href="https://www.opencart.com/index.php?route=marketplace/extension&filter_member=Rodrigoabr" 
+                                target="_blank" rel="noopener" class="text-decoration-none text-body-emphasis fw-medium">
+                                Rodrigoab
+                                </a> 
+                                &bull; Extensions OpenCart
+                            </p>
+                            
+                            <div class="text-body-tertiary" style="font-size: 0.7rem; letter-spacing: 0.02em;">
+                                <i class="fa-solid fa-sync-alt fa-xs me-1"></i>
+                                DERNIÈRE MISE À JOUR : 
+                                <span class="text-uppercase">
+                                    <script>
+                                        const date = new Date(document.lastModified);
+                                        document.write(date.toLocaleDateString('fr-FR', { day: '2-digit', month: '2-digit', year: 'numeric' }));
+                                    </script>
+                                </span>
+                            </div>
+                        </div>
+                    </footer>
+
+				</main>
+
+			</div>
+		</div>
+	</div>
+
+	<script src="../assets/js/scripts.js" defer></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
