@@ -35,3 +35,11 @@ Eliminate human error and duplicates. This module ensures **exclusive** identifi
 | Available Templates | 1 Only | **Unlimited** |
 | Numeric Ranges | 1 Only | **Unlimited** |
 | Customized Prefixes/Suffixes | ❌ | **Unlimited** |
+
+---
+
+## License
+
+This repository contains only documentation and tutorial materials.
+
+The OpenCart extension mentioned here is distributed separately under its own commercial license.
