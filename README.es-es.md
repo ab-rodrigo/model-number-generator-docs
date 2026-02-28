@@ -4,7 +4,7 @@
 
 ---
 
-![Model Number Pro](https://github.com/user-attachments/assets/f65b27dd-6e48-4cf9-9b38-3cfb38ac9236)
+![Model Number Generator](https://github.com/user-attachments/assets/f65b27dd-6e48-4cf9-9b38-3cfb38ac9236)
 
 **Model Number Generator** es la solución definitiva para la gestión de códigos de identificación en OpenCart. Olvídese del trabajo manual: automatice la creación de números de modelo únicos y estandarizados con un sistema inteligente de plantillas.
 
