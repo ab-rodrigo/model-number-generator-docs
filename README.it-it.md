@@ -35,3 +35,13 @@ Elimina l'errore umano e i duplicati. Questo modulo garantisce identificatori **
 | Template Disponibili | Solo 1 | **Illimitati** |
 | Intervalli Numerici | Solo 1 | **Illimitati** |
 | Prefissi/Suffissi Personalizzati | ❌ | **Illimitati** |
+
+---
+
+## Licenza
+
+Questo repository contiene esclusivamente documentazione e materiali tutorial.
+
+L’estensione OpenCart menzionata in questo repository è distribuita separatamente e dispone di una propria licenza commerciale nel marketplace ufficiale.
+
+Consultare il file LICENSE per maggiori dettagli.
