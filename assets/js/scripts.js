@@ -76,7 +76,11 @@ document.addEventListener("DOMContentLoaded", function () {
             document.body.style.overflow = "";
         }
 
-        overlay.addEventListener("click", closeOverlay);
+        overlay.addEventListener("click", function (event) {
+            if (event.target === overlay) {
+                closeOverlay();
+            }
+        });
         overlay.addEventListener("keydown", function (event) {
             if (event.key === "Escape") {
                 closeOverlay();
@@ -103,9 +107,6 @@ document.addEventListener("DOMContentLoaded", function () {
         if (currentPath.includes(langCode)) {
             link.classList.add("active");
         }
-    });
-
-    document.querySelectorAll(".lang-option").forEach(function (link) {
 
         link.addEventListener("click", function () {
             const originalHref = this.getAttribute("href");

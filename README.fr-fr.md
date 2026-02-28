@@ -29,7 +29,7 @@
 
 ## Comparaison des Versions
 
-| Fonctionnalité | Version Free | Version Pro |
+| Fonctionnalité | Version Gratuit | Version Complète |
 | :--- | :---: | :---: |
 | Verrouiller le champ Modèle | ❌ | ✅ |
 | Modèles Disponibles | 1 seul | **Illimités** |

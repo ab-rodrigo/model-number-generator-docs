@@ -29,7 +29,7 @@ Elimina l'errore umano e i duplicati. Questo modulo garantisce identificatori **
 
 ## Confronto Versioni
 
-| Funzionalità | Versione Free | Versione Pro |
+| Funzionalità | Versione Gratuita | Versione Completa |
 | :--- | :---: | :---: |
 | Blocca Campo Modello | ❌ | ✅ |
 | Template Disponibili | Solo 1 | **Illimitati** |

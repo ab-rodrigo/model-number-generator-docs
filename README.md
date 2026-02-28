@@ -29,7 +29,7 @@ Eliminate human error and duplicates. This module ensures **exclusive** identifi
 
 ## Version Comparison
 
-| Feature | Free Version | Pro Version |
+| Feature | Free Version | Full Version |
 | :--- | :---: | :---: |
 | Lock Model Field | ❌ | ✅ |
 | Available Templates | 1 Only | **Unlimited** |

@@ -29,7 +29,7 @@ Elimine errores humanos y duplicidades. Este módulo garantiza identificadores *
 
 ## Comparativa de Versiones
 
-| Función | Versión Free | Versión Pro |
+| Función | Versión Gratuita | Versión Completa |
 | :--- | :---: | :---: |
 | Bloquear Campo de Modelo | ❌ | ✅ |
 | Plantillas Disponibles | Solo 1 | **Ilimitadas** |

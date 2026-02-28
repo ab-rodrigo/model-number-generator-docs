@@ -29,7 +29,7 @@ Evite erros humanos e duplicados. Este módulo garante identificadores **exclusi
 
 ## Comparativo de Versões
 
-| Funcionalidade | Versão Free | Versão Pro |
+| Funcionalidade | Versão Gratuita | Versão Completa 
 | :--- | :---: | :---: |
 | Bloquear Campo de Modelo | ❌ | ✅ |
 | Modelos Disponíveis | Apenas 1 | **Ilimitados** |
