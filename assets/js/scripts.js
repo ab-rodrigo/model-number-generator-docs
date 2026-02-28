@@ -45,7 +45,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     function openImageZoom(imageSrc, imageAlt) {
-
         if (document.querySelector(".zoomed-img-overlay")) return;
 
         const overlay = document.createElement("div");
@@ -117,7 +116,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
             localStorage.setItem("user-manual-lang", manualPath);
         });
-
     });
-
 });
