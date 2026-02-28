@@ -35,3 +35,13 @@ Elimine errores humanos y duplicidades. Este módulo garantiza identificadores *
 | Plantillas Disponibles | Solo 1 | **Ilimitadas** |
 | Rangos Numéricos | Solo 1 | **Ilimitados** |
 | Prefijos/Sufijos Personalizados | ❌ | **Ilimitados** |
+
+---
+
+## Licencia
+
+Este repositorio contiene únicamente documentación y materiales de tutorial.
+
+La extensión OpenCart mencionada en este repositorio se distribuye por separado y cuenta con su propia licencia comercial en el marketplace oficial.
+
+Consulte el archivo LICENSE para más detalles.
