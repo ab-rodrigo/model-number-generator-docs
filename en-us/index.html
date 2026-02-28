@@ -1,0 +1,1048 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    
+    <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+
+    <meta name="description" content="Model Number Generator for OpenCart 3/4 — Tutorial" />
+    <meta name="author" content="Rodrigo Barbosa" />
+    <title>Model Number Generator for OpenCart 4 — Tutorial</title>
+    
+    <link href="https://fonts.cdnfonts.com/css/inter" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link href="https://getbootstrap.com/docs/5.0/assets/css/docs.css" rel="stylesheet" crossorigin="anonymous" />
+    
+    <link href="../assets/css/style.css?v=1.0.1" rel="stylesheet" />
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+
+			<nav class="navbar navbar-expand-lg fixed-top bg-body border-bottom shadow-sm" aria-label="Model Number Generator for OpenCart 4.x">
+				<div class="container-fluid d-flex align-items-center" style="min-height: 65px;">
+					
+					<div class="d-flex align-items-center">
+						<button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Open menu">
+							<i class="fa-solid fa-bars-staggered fs-4"></i>
+						</button>
+						<a class="navbar-brand ms-2 ms-lg-0 d-flex flex-column lh-1" href="#">
+							<span class="fw-bold fs-4 text-body">Model Number Generator</span>
+							<small class="text-body-tertiary fw-normal" style="font-size: 0.75rem;">OpenCart 4.x</small>
+						</a>
+					</div>
+
+					<div class="d-flex align-items-center gap-2">
+						<button class="darkModeToggle btn btn-link text-body-secondary p-2" type="button" title="Toggle theme">
+							<i class="fa-solid fa-moon fs-5"></i>
+						</button>
+
+						<div class="dropdown">
+							<button class="btn btn-link text-body-secondary p-2 dropdown-toggle no-caret" type="button" data-bs-toggle="dropdown" aria-expanded="false" title="Change language">
+								<i class="fa-solid fa-language fs-5"></i>
+							</button>
+							<ul class="dropdown-menu dropdown-menu-end shadow border-0 mt-2">
+								<li><h6 class="dropdown-header">Select Language</h6></li>
+								<li><a class="dropdown-item d-flex justify-content-between align-items-center lang-option" href="../pt-br/index.html">Português <small class="text-muted">BR</small></a></li>
+								<li><a class="dropdown-item d-flex justify-content-between align-items-center lang-option" href="../pt-pt/index.html">Português <small class="text-muted">PT</small></a></li>
+								<li><a class="dropdown-item d-flex justify-content-between align-items-center lang-option" href="../en-gb/index.html">English <small class="text-muted">GB</small></a></li>
+								<li><a class="dropdown-item d-flex justify-content-between align-items-center lang-option" href="../en-us/index.html">English <small class="text-muted">US</small></a></li>
+								<li><a class="dropdown-item d-flex justify-content-between align-items-center lang-option" href="../es-es/index.html">Español <small class="text-muted">ES</small></a></li>
+								<li><a class="dropdown-item d-flex justify-content-between align-items-center lang-option" href="../fr-fr/index.html">Français <small class="text-muted">FR</small></a></li>
+								<li><a class="dropdown-item d-flex justify-content-between align-items-center lang-option" href="../it-it/index.html">Italiano <small class="text-muted">IT</small></a></li>
+							</ul>
+						</div>
+
+						<a class="btn btn-success rounded px-3 d-none d-sm-flex align-items-center fw-medium" target="_blank" rel="noopener" href="https://www.opencart.com/index.php?route=marketplace/extension&filter_member=Rodrigoabr">
+							<i class="fa-solid fa-download me-2"></i> Download
+						</a>
+						<a class="btn btn-success rounded-circle d-sm-none p-2" target="_blank" rel="noopener" href="https://www.opencart.com/index.php?route=marketplace/extension&filter_member=Rodrigoabr" aria-label="Download extension">
+							<i class="fa-solid fa-download"></i>
+						</a>
+					</div>
+				</div>
+			</nav>
+
+			<aside class="col-lg-3 col-xl-2 sidebar border-end pe-0" id="col-aside">
+				<div class="offcanvas-lg offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+					<div class="offcanvas-header bg-body-tertiary">
+						<h5 class="offcanvas-title fw-bold" id="offcanvasNavbarLabel">Documentation</h5>
+						<button type="button" class="btn-close offcanvas-dismiss" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+					</div>
+					
+					<div class="offcanvas-body p-0">
+						<nav id="nav" class="w-100 p-3">
+							<ul class="nav flex-column gap-1">
+								
+								<li class="nav-item">
+									<a class="nav-link d-flex align-items-center px-2 offcanvas-dismiss" href="#section-welcome">
+										<div style="width: 24px;" class="text-center me-2"><i class="fa fa-home opacity-75"></i></div>
+										<span>Welcome</span>
+									</a>
+								</li>
+
+								<li class="nav-item">
+									<a class="nav-link d-flex align-items-center px-2 text-body-secondary" 
+									data-bs-toggle="collapse" href="#about-collapse" role="button" aria-expanded="false">
+										<div style="width: 24px;" class="text-center me-2"><i class="fa fa-info opacity-75"></i></div>
+										<span>About Module</span>
+										<i class="fa-solid fa-chevron-down ms-auto fs-xs" style="font-size: 0.7rem;"></i>
+									</a>
+									<div class="collapse" id="about-collapse">
+										<ul class="nav flex-column ms-4 border-start ps-3 py-1 gap-1">
+											<li><a class="nav-link py-1 small offcanvas-dismiss" href="#item-about-overview">Overview</a></li>
+											<li><a class="nav-link py-1 small offcanvas-dismiss" href="#item-about-features">Key Features</a></li>
+											<li><a class="nav-link py-1 small offcanvas-dismiss" href="#item-about-support">Support & License</a></li>
+										</ul>
+									</div>
+								</li>
+
+								<li class="nav-item">
+									<a class="nav-link d-flex align-items-center px-2 offcanvas-dismiss" href="#section-structure">
+										<div style="width: 24px;" class="text-center me-2"><i class="fa-solid fa-shapes opacity-75"></i></div>
+										<span>Model Structure</span>
+									</a>
+								</li>
+
+								<li class="nav-item">
+									<a class="nav-link d-flex align-items-center px-2 offcanvas-dismiss" href="#section-installation">
+										<div style="width: 24px;" class="text-center me-2"><i class="fa-solid fa-download opacity-75"></i></div>
+										<span>Installation</span>
+									</a>
+								</li>
+
+								<li class="nav-item">
+									<a class="nav-link d-flex align-items-center px-2 text-body-secondary" 
+									data-bs-toggle="collapse" href="#settings-collapse" role="button" aria-expanded="false">
+										<div style="width: 24px;" class="text-center me-2"><i class="fa-solid fa-gears opacity-75"></i></div>
+										<span>Configuration</span>
+										<i class="fa-solid fa-chevron-down ms-auto fs-xs" style="font-size: 0.7rem;"></i>
+									</a>
+									<div class="collapse" id="settings-collapse">
+										<ul class="nav flex-column ms-4 border-start ps-3 py-1 gap-1">
+											<li><a class="nav-link py-1 small offcanvas-dismiss" href="#section-settings">Settings Access</a></li>
+											<li><a class="nav-link py-1 small offcanvas-dismiss" href="#item-settings-general">General Settings</a></li>
+											<li><a class="nav-link py-1 small offcanvas-dismiss" href="#item-settings-affix">Prefix & Suffix</a></li>
+											<li><a class="nav-link py-1 small offcanvas-dismiss" href="#item-settings-interval">Sequential Interval</a></li>
+											<li><a class="nav-link py-1 small offcanvas-dismiss" href="#item-settings-template">Model Template</a></li>
+										</ul>
+									</div>
+								</li>
+
+								<li class="nav-item">
+									<a class="nav-link d-flex align-items-center px-2 offcanvas-dismiss" href="#section-using">
+										<div style="width: 24px;" class="text-center me-2"><i class="fa-solid fa-arrow-down-1-9 opacity-75"></i></div>
+										<span>Generating Numbers</span>
+									</a>
+								</li>
+
+								<li class="nav-item mt-2 pt-2 border-top">
+									<a class="nav-link d-flex align-items-center px-2 text-danger offcanvas-dismiss" href="#section-uninstall">
+										<div style="width: 24px;" class="text-center me-2"><i class="fa-regular fa-trash-can"></i></div>
+										<span>Uninstall</span>
+									</a>
+								</li>
+
+								<li class="nav-item">
+									<a class="nav-link d-flex align-items-center px-2 text-warning offcanvas-dismiss" href="#section-coffee">
+										<div style="width: 24px;" class="text-center me-2"><i class="fa-solid fa-mug-hot"></i></div>
+										<span>Someone said coffee?</span>
+									</a>
+								</li>
+
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</aside>
+
+			<div class="col-lg-9 col-xl-10 col-xxl-10 d-flex align-content-between flex-wrap justify-content-center" id="col-main">
+				<main role="main" class="container mt-2">
+
+					<article id="section-welcome" class="welcome-section mt-4 mb-5 p-5 bg-primary text-white rounded shadow-lg text-center position-relative overflow-hidden">
+						<div class="position-relative z-index-1">
+							<i class="fa-solid fa-rocket fa-3x mb-3 opacity-75"></i>
+							<h1 class="display-5 fw-bold">Welcome</h1>
+							<p class="lead mx-auto" style="max-width: 700px;">
+								Learn how to install, configure, and automate the standardization of your product model numbers.
+							</p>
+						</div>
+					</article>
+
+					<article id="section-about" class="about-section border-top px-0 py-5 text-body">
+						
+						<section id="item-about-overview" class="mb-5">
+							<div class="row align-items-center">
+								<div class="col-lg-7">
+									<h2 class="h3 fw-bold mb-3"><i class="fa-solid fa-circle-info text-primary me-2"></i>Overview</h2>
+									<p class="text-body-secondary lead">
+										Eliminate manual and repetitive work when creating identification codes.
+									</p>
+									<p class="text-body-secondary">
+										The module ensures <strong>unique and standardized</strong> identifiers through an intelligent Template system. With this solution, you eradicate human errors and duplicates, establishing a logical and scalable structure for total inventory control.
+									</p>
+								</div>
+								<div class="col-lg-5">
+									<div class="p-4 bg-body-tertiary rounded h-100 border border-secondary-subtle">
+										<h2 class="h5 fw-bold"><i class="fa-solid fa-list-check text-primary me-2"></i>Requirements</h2>
+										<p class="small text-body-secondary">Ensure you have permissions for:</p>
+										<ul class="list-unstyled small fw-bold text-primary">
+											<li><i class="fa-solid fa-check me-2"></i>Extension Installer & Manager</li>
+											<li><i class="fa-solid fa-check me-2"></i>Product Catalog</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="row mt-5">
+								<div class="col-12">
+									<div class="card shadow-sm border-secondary-subtle">
+										<div class="card-header bg-body-tertiary py-3">
+											<h3 class="h5 fw-bold mb-0 text-center"><i class="fa-solid fa-layer-group text-primary me-2"></i>Version Comparison</h3>
+										</div>
+										<div class="table-responsive">
+											<table class="table table-hover align-middle mb-0 table-striped">
+												<thead class="table-light small text-uppercase">
+													<tr>
+														<th class="ps-4" style="width: 40%;"></th>
+														<th class="text-center" style="width: 30%;">Free</th>
+														<th class="text-center bg-primary bg-opacity-10 text-primary" style="width: 30%;">Pro</th>
+													</tr>
+												</thead>
+												<tbody class="text-body-secondary">
+													<tr>
+														<td class="ps-4 fw-medium text-body">Lock Model Field</td>
+														<td class="text-center small"><i class="fa-solid fa-circle-xmark text-danger me-1"></i></td>
+														<td class="text-center fw-bold bg-primary bg-opacity-10 text-primary"><i class="fa-solid fa-circle-check text-success me-1"></i></td>
+													</tr>
+													<tr>
+														<td class="ps-4 fw-medium text-body">Templates</td>
+														<td class="text-center small">Only 1</td>
+														<td class="text-center fw-bold bg-primary bg-opacity-10 text-primary">Unlimited</td>
+													</tr>
+													<tr>
+														<td class="ps-4 fw-medium text-body">Number Intervals</td>
+														<td class="text-center small">Only 1</td>
+														<td class="text-center fw-bold bg-primary bg-opacity-10 text-primary">Unlimited</td>
+													</tr>
+													<tr>
+														<td class="ps-4 fw-medium text-body">Prefixes</td>
+														<td class="text-center small"><i class="fa-solid fa-circle-xmark text-danger me-1"></i></td>
+														<td class="text-center fw-bold bg-primary bg-opacity-10 text-primary">Unlimited</td>
+													</tr>
+													<tr>
+														<td class="ps-4 fw-medium text-body">Suffixes</td>
+														<td class="text-center small"><i class="fa-solid fa-circle-xmark text-danger me-1"></i></td>
+														<td class="text-center fw-bold bg-primary bg-opacity-10 text-primary">Unlimited</td>
+													</tr>
+												</tbody>
+												<tfoot>
+													<tr>
+														<td colspan="2"></td>
+														<td class="bg-primary bg-opacity-10 p-3 text-center border-top">
+															<a href="https://www.opencart.com/index.php?route=marketplace/extension&filter_member=Rodrigoabr" target="_blank" class="btn btn-primary btn-sm fw-bold w-100 shadow-sm">
+																<i class="fa-solid fa-crown me-2 text-warning"></i>Upgrade to Pro
+															</a>
+														</td>
+													</tr>
+												</tfoot>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</section>
+
+						<section id="item-about-features" class="mb-5">
+							<h2 class="h3 fw-bold mb-4 text-center text-body">Key Features</h2>
+							
+							<div class="row g-3 text-body">
+								
+								<div class="col-md-6 col-lg-4">
+									<div class="card h-100 bg-body border-primary-subtle shadow-sm border-2">
+										<div class="card-body">
+											<div class="d-flex justify-content-between align-items-start">
+												<i class="fa-solid fa-magic-wand-sparkles text-primary mb-3 fs-4"></i>
+												<span class="badge bg-primary rounded-pill small">Essential</span>
+											</div>
+											<h3 class="h6 fw-bold">Smart Auto-fill</h3>
+											<p class="small text-body-secondary mb-0">The system identifies the default template and automatically fills the "Model" field when opening a new form, saving time and clicks.</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-6 col-lg-4">
+									<div class="card h-100 bg-body border-success-subtle shadow-sm border-2">
+										<div class="card-body">
+											<div class="d-flex justify-content-between align-items-start">
+												<i class="fa-solid fa-shield-halved text-success mb-3 fs-4"></i>
+												<span class="badge bg-success rounded-pill small">Integrity</span>
+											</div>
+											<h3 class="h6 fw-bold">Security & Uniqueness</h3>
+											<p class="small text-body-secondary mb-0">
+												Guarantees a <strong>**unique identity**</strong> for each product, preventing duplicate numbers. 
+												Lock the <strong>Model</strong> field for manual editing to eliminate human errors.
+											</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-6 col-lg-4">
+									<div class="card h-100 bg-body border-warning-subtle shadow-sm">
+										<div class="card-body">
+											<div class="d-flex justify-content-between align-items-start">
+												<i class="fa-solid fa-arrows-rotate text-warning mb-3 fs-4"></i>
+												<span class="badge bg-warning rounded-pill small">Important</span>
+											</div>
+											<h3 class="h6 fw-bold">Retroactive Processing</h3>
+											<p class="small text-body-secondary mb-0">Standardize existing store items. The module safely generates and applies model numbers to your current products.</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-6 col-lg-4">
+									<div class="card h-100 bg-body border-secondary-subtle shadow-sm">
+										<div class="card-body">
+											<i class="fa-solid fa-layer-group text-primary mb-3 fs-4"></i>
+											<h3 class="h6 fw-bold">Dynamic Templates</h3>
+											<p class="small text-body-secondary mb-0">Combine prefixes, intervals, and suffixes to create distinct rules by department or product category.</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-6 col-lg-4">
+									<div class="card h-100 bg-body border-info-subtle shadow-sm">
+										<div class="card-body">
+											<i class="fa-solid fa-globe text-info mb-3 fs-4"></i>
+											<h3 class="h6 fw-bold">Multi-language Interface</h3>
+											<p class="small text-body-info mb-0">Intuitive interface with native translations in EN, PT, FR, ES, and IT.</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-6 col-lg-4 text-center">
+									<div class="card h-100 bg-primary-subtle border-0 shadow-sm">
+										<div class="card-body d-flex flex-column justify-content-center align-items-center">
+											<i class="fa-solid fa-circle-nodes text-primary mb-2 fs-3"></i>
+											<h3 class="h6 fw-bold text-primary-emphasis">Full Scalability</h3>
+											<p class="smaller text-primary-emphasis opacity-75 mb-0">Manage multiple rules simultaneously without performance loss in large databases.</p>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+						</section>
+
+						<section id="item-about-support" class="mb-5">
+							<h2 class="h3 fw-bold mb-4 text-center text-body">Support & License</h2>
+							<div class="row g-4 mt-2">
+								<div class="col-md-6">
+									<div class="p-4 bg-body-tertiary rounded h-100 border border-secondary-subtle">
+										<h2 class="h5 fw-bold"><i class="fa-solid fa-headset text-primary me-2"></i>Support</h2>
+										<p class="small text-body-secondary">Need help?</p>
+										<a href="https://www.opencart.com/index.php?route=marketplace/extension&filter_member=Rodrigoabr" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill px-3">
+											Get Support <i class="fa-solid fa-external-link ms-1 small"></i>
+										</a>
+									</div>
+								</div>
+
+								<div class="col-md-6">
+									<div class="p-4 bg-body-tertiary rounded h-100 border border-secondary-subtle">
+										<h2 class="h5 fw-bold"><i class="fa-solid fa-scale-balanced text-primary me-2"></i>License</h2>
+										<p class="small text-body-secondary mb-3">Software distributed under the terms:</p>
+										<a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank" class="text-decoration-none fw-bold small">
+											GPL v3.0 <i class="fa-solid fa-arrow-right-long ms-1"></i>
+										</a>
+									</div>
+								</div>
+							</div>
+						</section>
+
+					</article>
+
+					<article id="section-structure" class="structure-section border-top px-0 py-5 text-body">
+						<header class="mb-5 text-center">
+							<div class="text-start">
+								<h2 class="h3 fw-bold"><i class="fa-solid fa-sitemap text-primary me-2"></i>Model Number Structure</h2>
+								<p class="text-body-secondary lead mx-auto">
+									The code generation is modular and flexible, divided into three components that ensure full traceability and uniqueness.
+								</p>
+							</div>
+							
+							<div class="d-inline-flex flex-wrap justify-content-center bg-body-tertiary p-3 rounded border shadow-sm mt-3 text-center">
+								<div class="px-2 border-end border-secondary-subtle"><small class="d-block text-uppercase text-primary fw-bold" style="font-size: 0.65rem;">Prefix</small><span class="h5 font-monospace mb-0">ABC-XYZ-</span></div>
+								<div class="px-2 border-end border-secondary-subtle"><small class="d-block text-uppercase text-success fw-bold" style="font-size: 0.65rem;">Sequential</small><span class="h5 font-monospace mb-0 text-success">0001</span></div>
+								<div class="px-2"><small class="d-block text-uppercase text-primary fw-bold" style="font-size: 0.65rem;">Suffix</small><span class="h5 font-monospace mb-0">-ASD-QWE</span></div>
+							</div>
+						</header>
+
+						<div class="row g-4">
+							<div class="col-lg-4">
+								<div class="card h-100 bg-body-tertiary border-0 shadow-sm">
+									<div class="card-body">
+										<h3 class="h5 fw-bold mb-3 text-primary"><i class="fa-solid fa-indent me-2"></i>Prefixes</h3>
+										<p class="small text-body-secondary">Macro identifiers that precede the sequential number (e.g., <code>ABC-XYZ-</code>).</p>
+										<ul class="list-unstyled small mb-0">
+											<li class="mb-2"><i class="fa-solid fa-check text-primary me-2"></i><strong>Modular:</strong> Segmented into multiple blocks.</li>
+											<li class="mb-2"><i class="fa-solid fa-check text-primary me-2"></i><strong>Scalable:</strong> Add as many blocks as you wish.</li>
+											<li class="mb-2"><i class="fa-solid fa-check text-primary me-2"></i><strong>Optional:</strong> Use only when necessary.</li>
+											<li><i class="fa-solid fa-check text-primary me-2"></i><strong>Connection:</strong> Requires a separator before the numeral.</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-lg-4">
+								<div class="card h-100 bg-body border-success-subtle shadow-sm">
+									<div class="card-body">
+										<h3 class="h5 fw-bold mb-3 text-success"><i class="fa-solid fa-arrow-down-1-9 me-2"></i>Numerical Range</h3>
+										<p class="small text-body-secondary">The mandatory sequential core (e.g., <code>0001</code>), ensuring uniqueness.</p>
+										<ul class="list-unstyled small mb-0">
+											<li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i><strong>Padding:</strong> Left-aligned zero filling.</li>
+											<li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i><strong>Variable:</strong> Customizable digit length.</li>
+											<li><i class="fa-solid fa-check text-success me-2"></i><strong>Ranges:</strong> Specific rules per category.</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-lg-4">
+								<div class="card h-100 bg-body-tertiary border-0 shadow-sm">
+									<div class="card-body">
+										<h3 class="h5 fw-bold mb-3 text-primary"><i class="fa-solid fa-outdent me-2"></i>Suffixes</h3>
+										<p class="small text-body-secondary">Final attributes to detail versions or status (e.g., <code>-ASD-QWE</code>).</p>
+										<ul class="list-unstyled small mb-0">
+											<li class="mb-2"><i class="fa-solid fa-check text-primary me-2"></i><strong>Modular:</strong> Segmented into multiple blocks.</li>
+											<li class="mb-2"><i class="fa-solid fa-check text-primary me-2"></i><strong>Scalable:</strong> Add as many blocks as you wish.</li>
+											<li class="mb-2"><i class="fa-solid fa-check text-primary me-2"></i><strong>Optional:</strong> Use only when necessary.</li>
+											<li><i class="fa-solid fa-check text-primary me-2"></i><strong>Connection:</strong> Requires a separator before the numeral.</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="mt-5">
+							<div class="p-4 bg-warning-subtle rounded shadow-sm mb-4">
+								<h3 class="h6 fw-bold text-warning-emphasis"><i class="fa-solid fa-triangle-exclamation me-2"></i>Attention: Separator Sensitivity</h3>
+								<p class="small text-warning-emphasis mb-3">
+									The system processes each character literally, linking the numerical range to the unique combination of prefixes, suffixes, and separators. 
+									<strong>Any change — such as swapping a hyphen (-) for a slash (/) — defines a new identity</strong>, automatically restarting the numerical sequence for that specific identifier.
+								</p>
+								
+								<div class="table-responsive">
+									<table class="table table-sm table-borderless mb-0">
+										<tbody class="small">
+											<tr>
+												<td style="width: 210px;"><code class="text-primary-emphasis bg-primary-subtle px-2 py-1 rounded border border-primary-subtle">ABC-XYZ-0001-ASD-QWE</code></td>
+												<td class="text-body-secondary"><i class="fa-solid fa-arrow-right me-1 opacity-50"></i> Reference pattern.</td>
+											</tr>
+											<tr>
+												<td><code class="text-danger-emphasis bg-danger-subtle px-2 py-1 rounded border border-danger-subtle">ABC<span class="fw-bold text-decoration-underline">/</span>XYZ-0001-ASD-QWE</code></td>
+												<td class="text-body-secondary"><i class="fa-solid fa-xmark text-danger me-1"></i> The slash changes the prefix: the count restarts for this new group.</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+
+							<div class="mt-5 p-4 bg-body-tertiary rounded shadow-sm">
+								<h3 class="h6 mb-3 fw-bold text-body">
+									<i class="fa-solid fa-lightbulb text-warning me-2"></i> Standardization Tip:
+								</h3>
+								<p class="small text-body-secondary mb-3">
+									To maintain readability on labels and reports, use short acronyms to represent categories or brands.
+								</p>
+								
+								<div class="d-flex flex-column gap-2">
+									<div class="small">
+										<i class="fa-solid fa-check text-success me-2"></i>
+										<span class="text-body-secondary">Recommended:</span>
+										<code class="text-primary-emphasis bg-primary-subtle px-2 py-1 rounded border border-primary-subtle ms-1">
+											HW-MEM-DDR4-001
+										</code>
+										<small class="text-muted ms-2">(Hardware - Memory - DDR4)</small>
+									</div>
+
+									<div class="small">
+										<i class="fa-solid fa-xmark text-danger me-2"></i>
+										<span class="text-body-secondary">Avoid:</span>
+										<code class="text-danger-emphasis bg-danger-subtle px-2 py-1 rounded border border-danger-subtle ms-1">
+											HARDWARE-MEMORY-DDR4-001
+										</code>
+									</div>
+								</div>
+							</div>
+						</div>
+					</article>
+
+					<article id="section-installation" class="installation-section border-top px-0 py-5 text-body">
+						<header class="mb-5">
+							<h2 class="h3 fw-bold">
+								<i class="fa-solid fa-download text-primary me-2"></i>Installation
+							</h2>
+							<p class="text-body-secondary lead">Follow the steps below to securely integrate the module into your OpenCart system.</p>
+						</header>
+
+						<div class="row g-4">
+							<div class="col-md-4">
+								<div class="card h-100 bg-body-tertiary border-0 shadow-sm">
+									<div class="card-body">
+										<div class="d-flex align-items-center mb-3">
+											<span class="badge rounded-pill bg-primary me-2 px-3 py-2">01</span>
+											<h3 class="h6 mb-0 fw-bold">Download</h3>
+										</div>
+										<p class="small text-body-secondary mb-3">
+											Get the official module directly from the OpenCart Marketplace:
+										</p>
+										<a href="https://www.opencart.com/index.php?route=marketplace/extension&filter_member=Rodrigoabr" target="_blank" class="btn btn-sm btn-outline-primary w-100 rounded-pill">
+											<i class="fa-solid fa-cloud-arrow-down me-1"></i> Official Page
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-4">
+								<div class="card h-100 bg-body-tertiary border-0 shadow-sm">
+									<div class="card-body">
+										<div class="d-flex align-items-center mb-3">
+											<span class="badge rounded-pill bg-primary me-2 px-3 py-2">02</span>
+											<h3 class="h6 mb-0 fw-bold">Upload</h3>
+										</div>
+										<p class="small text-body-secondary">
+											In your store's admin panel, go to <strong>Extensions > Installer</strong>. Click 
+											<i class="fa-solid fa-upload bg-primary text-white align-middle rounded-1" style="font-size: 0.65rem;padding: 4px;"></i> <strong>Upload</strong> and select the downloaded file.
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-4">
+								<div class="card h-100 bg-body-tertiary border-0 shadow-sm">
+									<div class="card-body">
+										<div class="d-flex align-items-center mb-3">
+											<span class="badge rounded-pill bg-primary me-2 px-3 py-2">03</span>
+											<h3 class="h6 mb-0 fw-bold">Activation</h3>
+										</div>
+										<p class="small text-body-secondary">
+											Locate the module in the extensions list and click the 
+											<i class="fa-solid fa-square-plus text-success fs-5 align-middle"></i> 
+											<strong>Install</strong> icon to activate it.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="mt-5 p-3 bg-info-subtle rounded d-flex align-items-center">
+							<i class="fa-solid fa-circle-info text-info fs-4 me-3"></i>
+							<div class="text-info-emphasis small">
+								<strong>Tech Tip:</strong> After activation, remember to go to <strong>Extensions > Modifications</strong> and click the <strong>Refresh</strong> button (blue icon) to clear the system cache.
+							</div>
+						</div>
+					</article>
+
+					<article id="section-settings" class="settings-section border-top px-0 py-5 text-body">
+						<header class="mb-5">
+							<h2 class="h3 fw-bold"><i class="fa-solid fa-gear text-primary me-2"></i>Accessing Settings</h2>
+							<p class="text-body-secondary lead">After installation, follow this workflow to configure your automation.</p>
+						</header>
+
+						<div class="row g-3 mb-5">
+							<div class="col-md-4">
+								<div class="p-3 bg-body-tertiary border rounded-3 h-100">
+									<div class="d-flex align-items-center mb-3">
+										<span class="badge rounded-pill bg-primary me-2 px-3 py-2">01</span>
+										<h3 class="h6 mb-0 fw-bold">Side Menu</h3>
+									</div>
+									<p class="smaller text-body-secondary mb-0">Go to <strong>Extensions > Extensions</strong>.</p>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="p-3 bg-body-tertiary border rounded-3 h-100">
+									<div class="d-flex align-items-center mb-3">
+										<span class="badge rounded-pill bg-primary me-2 px-3 py-2">02</span>
+										<h3 class="h6 mb-0 fw-bold">Filter</h3>
+									</div>
+									<p class="smaller text-body-secondary mb-0">Select the <strong>Modules</strong> extension type.</p>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="p-3 bg-body-tertiary border rounded-3 h-100">
+									<div class="d-flex align-items-center mb-3">
+										<span class="badge rounded-pill bg-primary me-2 px-3 py-2">03</span>
+										<h3 class="h6 mb-0 fw-bold">Edit</h3>
+									</div>
+									<p class="smaller text-body-secondary mb-0">Click <i class="fa-solid fa-pencil-square text-primary fs-5 align-middle"></i> <strong>Edit</strong> to open the panel.</p>
+								</div>
+							</div>
+						</div>
+
+						<section id="item-settings-general" class="mb-5 pt-4">
+							<h3 class="h4 fw-bold mb-4 border-bottom pb-2">1. General Settings</h3>
+							<div class="row align-items-center g-4">
+								<div class="col-lg-6">
+									<figure class="mb-0">
+										<img src="../assets/images/en-us/docs-config-general-tab-en-us.png" alt="General Tab" class="img-fluid shadow-sm rounded border" loading="lazy" />
+										<figcaption class="small text-muted mt-2 font-italic">
+											<i class="fa-solid fa-magnifying-glass me-1"></i> General Configuration
+										</figcaption>
+									</figure>
+								</div>
+								<div class="col-lg-6">
+									<div class="table-responsive">
+										<table class="table table-sm align-middle border">
+											<thead class="table-light">
+												<tr><th>Parameter</th><th>Function</th></tr>
+											</thead>
+											<tbody class="small">
+												<tr><td><strong>Auto-fill</strong></td><td class="text-body-secondary">Generates the template instantly when creating products.</td></tr>
+												<tr><td><strong>Prevent Editing</strong></td><td class="text-body-secondary">Locks the <strong>Model</strong> field to prevent manual changes.</td></tr>
+												<tr><td><strong>Status</strong></td><td class="text-body-secondary">Enables or disables the module.</td></tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<section id="item-settings-affix" class="mb-5 pt-4">
+							<h3 class="h4 fw-bold mb-4 border-bottom pb-2">2. Prefix and Suffix</h3>
+							<p class="text-body-secondary small mb-4">These tabs allow you to compose the text or date elements surrounding the sequential number.</p>
+							
+							<div class="row g-4">
+								<div class="col-lg-6">
+									<div class="sticky-lg-top" style="top: 2rem;">
+										<figure class="mb-0">
+											<img src="../assets/images/en-us/docs-config-prefix-tab-en-us.png" alt="Prefix Tab" class="img-fluid shadow-sm rounded border" loading="lazy" />
+											<figcaption class="small text-muted mt-2 font-italic">
+												<i class="fa-solid fa-magnifying-glass me-1"></i> Prefix and Suffix Configuration
+											</figcaption>
+										</figure>
+									</div>
+								</div>
+
+								<div class="col-lg-6">
+									<div class="mb-4">
+										<h4 class="h6 fw-bold text-primary mb-2"><i class="fa-solid fa-sliders me-2"></i>Group Settings</h4>
+										<div class="table-responsive">
+											<table class="table table-sm align-middle border">
+												<thead class="table-light">
+													<tr><th style="width: 35%;">Parameter</th><th>Function</th></tr>
+												</thead>
+												<tbody class="small text-body-secondary">
+													<tr>
+														<td><strong>Name</strong></td>
+														<td>Internal identification. <br>
+															<small class="text-muted italic">E.g.: Electronics, Apparel.</small>
+														</td>
+													</tr>
+													<tr>
+														<td><strong>Separator</strong></td>
+														<td>Character that joins this group to the sequential number.</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div>
+										<h4 class="h6 fw-bold text-primary mb-2"><i class="fa-solid fa-layer-group me-2"></i>Element Composition</h4>
+										<div class="table-responsive">
+											<table class="table table-sm align-middle border text-body-secondary">
+												<thead class="table-light">
+													<tr><th style="width: 35%;">Parameter</th><th>Description</th></tr>
+												</thead>
+												<tbody class="small">
+													<tr>
+														<td><strong>Type</strong></td>
+														<td>Defines if the element will be <strong>Fixed Text</strong> or a <strong>Dynamic Date</strong>.</td>
+													</tr>
+													<tr>
+														<td><strong>Content (Text)</strong></td>
+														<td>The textual value to be displayed (e.g., <code>PROD</code>).</td>
+													</tr>
+													<tr>
+														<td><strong>Format (Date)</strong></td>
+														<td>The desired date pattern (e.g., <code>2-digit year + month</code>).</td>
+													</tr>
+													<tr>
+														<td><strong>Separator</strong></td>
+														<td>Character that joins this element to the next one within the same prefix.</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<div class="mt-4 p-3 bg-body-tertiary border rounded-3 d-flex align-items-center shadow-sm">
+											<i class="fa-solid fa-lightbulb text-warning fs-4 me-3"></i>
+											<p class="small mb-0 text-body-secondary">
+												<strong>Tip:</strong> You can add multiple elements to create complex prefixes, such as <code>YEAR-CATEGORY-</code>.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<section id="item-settings-interval" class="mb-5 pt-4">
+							<h3 class="h4 fw-bold mb-4 border-bottom pb-2">3. Sequential Interval</h3>
+							
+							<div class="row align-items-center g-4">
+								<div class="col-lg-6">
+									<figure class="mb-0">
+										<img src="../assets/images/en-us/docs-config-interval-tab-en-us.png" alt="Intervals Tab" class="img-fluid shadow-sm rounded border" loading="lazy" />
+										<figcaption class="small text-muted mt-2 font-italic">
+											<i class="fa-solid fa-magnifying-glass me-1"></i> Sequential Number Range Configuration
+										</figcaption>
+									</figure>
+								</div>
+
+								<div class="col-lg-6">
+									<div class="table-responsive">
+										<table class="table table-sm align-middle border">
+											<thead class="table-light">
+												<tr>
+													<th style="width: 35%;">Parameter</th>
+													<th>Description</th>
+												</tr>
+											</thead>
+											<tbody class="small text-body-secondary">
+												<tr>
+													<td><strong>Name</strong></td>
+													<td>Internal identification. <br>
+														<small class="text-muted italic">E.g.: General Count, Batch 2024.</small>
+													</td>
+												</tr>
+												<tr>
+													<td><strong>Leading Zeros</strong></td>
+													<td>
+														Enables padding for visual standardization.
+													</td>
+												</tr>
+												<tr>
+													<td><strong>Length</strong></td>
+													<td>Total number of digits. <br>
+														<small class="text-muted">E.g.: A length of 4 transforms "1" into "0001".</small>
+													</td>
+												</tr>
+												<tr>
+													<td><strong>Min / Max</strong></td>
+													<td>Defines the starting point and the final count limit.</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+
+							<div class="mt-4 p-3 bg-body-tertiary border rounded-3 d-flex align-items-center shadow-sm">
+								<i class="fa-solid fa-shield-check text-success fs-4 me-3"></i>
+								<p class="small mb-0 text-body-emphasis">
+									<i class="fa-solid fa-lightbulb text-success me-2"></i><strong class="text-success">Security Tip:</strong> The system uses these limits to ensure <strong>non-duplication</strong>. Upon reaching the maximum value, an alert will be issued preventing new records to guarantee data integrity.
+								</p>
+							</div>
+						</section>
+						
+						<section id="item-settings-template" class="mb-5 pt-4">
+							<h3 class="h4 fw-bold mb-4 border-bottom pb-2">4. Template</h3>
+							<div class="row align-items-center g-4">
+								<div class="col-lg-6">
+									<figure class="mb-0">
+										<img src="../assets/images/en-us/docs-config-template-tab-en-us.png" alt="Template Tab" class="img-fluid shadow-sm rounded border" loading="lazy" />
+										<figcaption class="small text-muted mt-2 font-italic">
+											<i class="fa-solid fa-magnifying-glass me-1"></i> Final identifier assembly interface
+										</figcaption>
+									</figure>
+								</div>
+
+								<div class="col-lg-6">
+									<div class="table-responsive">
+										<table class="table table-sm align-middle border">
+											<thead class="table-light">
+												<tr>
+													<th style="width: 30%;">Parameter</th>
+													<th>Description</th>
+												</tr>
+											</thead>
+											<tbody class="small text-body-secondary">
+												<tr>
+													<td><strong>Name</strong></td>
+													<td>Internal identification. <br>
+														<small class="text-muted italic">E.g.: Mouse, Keyboard, A4 Sheets.</small>
+													</td>
+												</tr>
+												<tr>
+													<td><strong>Prefix</strong></td>
+													<td>Link to the configured <strong>Prefix</strong> group.</td>
+												</tr>
+												<tr>
+													<td><strong>Interval</strong></td>
+													<td>Link to the <strong>Sequential Numbering</strong> rule.</td>
+												</tr>
+												<tr>
+													<td><strong>Suffix</strong></td>
+													<td>Link to the configured <strong>Suffix</strong> group.</td>
+												</tr>
+												<tr>
+													<td><strong>Default</strong></td>
+													<td>Sets the template as the primary one for <strong>auto-fill</strong>.</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+
+							<div class="mt-4 p-3 bg-body-tertiary border rounded-3 d-flex align-items-center shadow-sm">
+								<div class="me-3">
+									<i class="fa-solid fa-circle-nodes text-primary fs-4"></i>
+								</div>
+								<div>
+									<p class="small mb-0 text-body-emphasis">
+										<strong class="text-primary">Workflow Tip:</strong> 
+										<span class="text-body-secondary">
+											The Template is where you "stitch together" the previous settings. Make sure that the Prefix, Interval, and Suffix groups have already been created before finalizing this step.
+										</span>
+									</p>
+								</div>
+							</div>
+						</section>
+					</article>
+
+					<article id="section-using" class="using-section border-top px-0 py-5 text-body">
+						<header class="mb-5">
+							<h2 class="h3 fw-bold">
+								<i class="fa-solid fa-hashtag text-primary me-2"></i>Generating Numbers
+							</h2>
+							<p class="text-body-secondary lead">Follow the workflow below to apply automatic numbering to your products.</p>
+						</header>
+
+						<div class="mt-4">
+							<figure class="mb-5">
+								<img src="../assets/images/en-us/docs-using-en-us.png" alt="Model generation interface" class="img-fluid shadow-sm rounded border" loading="lazy" />
+								<figcaption class="small text-muted mt-2 font-italic">
+									<i class="fa-solid fa-magnifying-glass me-1"></i> View of the Model field with integrated template controls
+								</figcaption>
+							</figure>
+						</div>
+
+						<div class="row g-4">
+							<div class="col-md-3">
+								<div class="card h-100 bg-body-tertiary border-0 shadow-sm">
+									<div class="card-body">
+										<div class="d-flex align-items-center mb-3">
+											<span class="badge rounded-pill bg-primary me-2 px-3 py-2">01</span>
+											<h3 class="h6 mb-0 fw-bold">Navigation</h3>
+										</div>
+										<p class="small text-body-secondary mb-3">
+											In the side menu, go to <strong>Catalog</strong> and select the <strong>Products</strong> option.
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-3">
+								<div class="card h-100 bg-body-tertiary border-0 shadow-sm">
+									<div class="card-body">
+										<div class="d-flex align-items-center mb-3">
+											<span class="badge rounded-pill bg-primary me-2 px-3 py-2">02</span>
+											<h3 class="h6 mb-0 fw-bold">Access</h3>
+										</div>
+										<p class="small text-body-secondary">
+											Click <i class="fa-solid fa-pencil-square text-primary align-middle" style="font-size: 1.35rem;"></i> <strong>Edit</strong> on the product or the <i class="fa-solid fa-plus-circle bg-primary text-white align-middle rounded-1" style="font-size: 0.65rem;padding:5px;"></i> <strong>Add New</strong> button.
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-3">
+								<div class="card h-100 bg-body-tertiary border-0 shadow-sm">
+									<div class="card-body">
+									<div class="d-flex align-items-center mb-3">
+											<span class="badge rounded-pill bg-primary me-2 px-3 py-2">03</span>
+											<h3 class="h6 mb-0 fw-bold">Location</h3>
+										</div>
+										<p class="small text-body-secondary">
+											Go to the <strong>Data</strong> tab and locate the <strong>Model</strong> field in the form.
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-3">
+								<div class="card h-100 bg-body-tertiary border-0 shadow-sm">
+									<div class="card-body">
+									<div class="d-flex align-items-center mb-3">
+											<span class="badge rounded-pill bg-primary me-2 px-3 py-2">04</span>
+											<h3 class="h6 mb-0 fw-bold">Generate Number</h3>
+										</div>
+										<p class="small text-body-secondary">
+											Select the template and click the <strong>Generate</strong> button 
+											<i class="fa-solid fa-arrow-up bg-primary text-white align-middle rounded-1" style="font-size: 0.7rem;padding: 5px 6px;"></i>. The <strong>Model</strong> field will be filled.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="mt-4 p-3 bg-body-tertiary border rounded-3 d-flex align-items-center shadow-sm">
+							<div class="me-3">
+								<span class="text-primary fs-4">
+									<i class="fa-solid fa-star"></i>
+								</span>
+							</div>
+							<div>
+								<p class="small mb-0 text-body-emphasis">
+									<strong class="text-primary">Convenience Tip:</strong> When selecting a non-default template and checking the <strong>"Set as default"</strong> option, the system will automatically save your choice upon generating the number.
+								</p>
+							</div>
+						</div>
+
+					</article>
+
+					<article id="section-uninstall" class="uninstall-section border-top px-0 py-5 text-body">
+						<header class="mb-5">
+							<h2 class="h3 fw-bold">
+								<i class="fa-solid fa-trash-can text-danger me-2"></i>Uninstallation
+							</h2>
+							<p class="text-body-secondary lead">Follow the steps below for a clean and safe uninstallation.</p>
+						</header>
+
+						<div class="row g-4 mb-5">
+							<div class="col-md-6 col-lg-4">
+								<div class="card h-100 bg-body-tertiary border-0 shadow-sm">
+									<div class="card-body">
+										<div class="d-flex align-items-center mb-3">
+											<span class="badge rounded-pill bg-danger me-2 px-3 py-2">01</span>
+											<h3 class="h6 mb-0 fw-bold">Deactivate</h3>
+										</div>
+										<p class="small text-body-secondary mb-0">
+											Go to <strong>Extensions > Extensions</strong>, filter by <strong>Modules</strong>, locate the module and click 
+											<i class="fa-solid fa-minus-circle bg-danger text-white align-middle rounded-1" style="font-size: 0.65rem;padding:5px;"></i> 
+											<strong>Uninstall</strong>.
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-6 col-lg-4">
+								<div class="card h-100 bg-body-tertiary border-0 shadow-sm">
+									<div class="card-body">
+										<div class="d-flex align-items-center mb-3">
+											<span class="badge rounded-pill bg-danger me-2 px-3 py-2">02</span>
+											<h3 class="h6 mb-0 fw-bold">Uninstall</h3>
+										</div>
+										<p class="small text-body-secondary mb-0">
+											Locate the module in the list of installed extensions and click the 
+											<i class="fa-solid fa-minus-circle bg-warning text-white align-middle rounded-1" style="font-size: 0.65rem;padding:5px;"></i>
+											<strong>Uninstall</strong> icon.
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-6 col-lg-4">
+								<div class="card h-100 bg-body-tertiary border-0 shadow-sm">
+									<div class="card-body">
+										<div class="d-flex align-items-center mb-3">
+											<span class="badge rounded-pill bg-danger me-2 px-3 py-2">03</span>
+											<h3 class="h6 mb-0 fw-bold">Delete</h3>
+										</div>
+										<p class="small text-body-secondary mb-0">
+											Still in the installed extensions list, click 
+											<i class="fa-regular fa-trash-can bg-danger text-white align-middle rounded-1" style="font-size: 0.65rem;padding: 4px 5px;"></i> <strong>Delete</strong>.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="alert alert-warning border-start border-4 border-warning rounded-3 shadow-sm mt-4">
+							<div class="d-flex">
+								<div class="me-3">
+									<i class="fa-solid fa-triangle-exclamation fs-3"></i>
+								</div>
+								<div>
+									<h4 class="h6 fw-bold mb-1">What happens to the data?</h4>
+									<p class="small mb-0 text-body-secondary">
+										Uninstallation removes the module settings and files. However, the <strong>model numbers already generated</strong> for your products will remain saved in the database to prevent loss of integrity in your records.
+									</p>
+								</div>
+							</div>
+						</div>
+					</article>
+
+					<article class="article px-0 py-5 border-top text-center" id="section-coffee">
+						<div class="row justify-content-center">
+							<div class="col-md-8 col-lg-6">
+								<div class="card bg-body-tertiary border-0 shadow-sm rounded-4">
+									<div class="card-body p-4 p-lg-5">
+										<div class="mb-3">
+											<i class="fa-solid fa-mug-hot text-warning fs-1"></i>
+										</div>
+										
+										<h2 class="h4 fw-bold mb-3">Enjoying the module?</h2>
+										
+										<p class="text-body-secondary mb-4">
+											I know, it's a paid module, but if it's saving your day and optimizing your catalog, how about buying me a coffee? 
+											This helps keep the code clean, the support fast, and provides the caffeine needed for the next updates!
+										</p>
+
+										<div class="d-grid gap-2 d-sm-flex justify-content-sm-center align-items-center">
+											<a href="https://www.paypal.com/donate/?hosted_button_id=SPQH2B32XBJUW" 
+											target="_blank" 
+											rel="noopener" 
+											class="btn btn-primary btn-lg px-4 rounded-pill fw-bold shadow-sm">
+												<i class="fa-brands fa-paypal me-2"></i>
+												Buy me a coffee
+											</a>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</article>
+
+					<footer class="footer mt-5 pb-5 pt-4 border-top">
+						<div class="container text-center">
+							<p class="small text-body-secondary mb-1">
+								&copy; <script>document.write(new Date().getFullYear());</script> 
+								<a href="https://www.opencart.com/index.php?route=marketplace/extension&filter_member=Rodrigoabr" 
+								target="_blank" rel="noopener" class="text-decoration-none text-body-emphasis fw-medium">
+								Rodrigoab
+								</a> 
+								&bull; OpenCart Extensions
+							</p>
+							
+							<div class="text-body-tertiary" style="font-size: 0.7rem; letter-spacing: 0.02em;">
+								<i class="fa-solid fa-sync-alt fa-xs me-1"></i>
+								LAST UPDATED: 
+								<span class="text-uppercase">
+									<script>
+										const date = new Date(document.lastModified);
+										document.write(date.toLocaleDateString('en-GB', { day: '2-digit', month: '2-digit', year: 'numeric' }));
+									</script>
+								</span>
+							</div>
+						</div>
+					</footer>
+
+				</main>
+
+			</div>
+		</div>
+	</div>
+
+	<script src="../assets/js/scripts.js" defer></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
