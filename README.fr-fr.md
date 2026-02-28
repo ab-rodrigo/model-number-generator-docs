@@ -35,3 +35,13 @@
 | Modèles Disponibles | 1 seul | **Illimités** |
 | Plages Numériques | 1 seule | **Illimitées** |
 | Préfixes/Suffixes Personnalisés | ❌ | **Illimités** |
+
+---
+
+## Licence
+
+Ce dépôt contient uniquement de la documentation et du matériel de tutoriel.
+
+L’extension OpenCart mentionnée dans ce dépôt est distribuée séparément et dispose de sa propre licence commerciale sur la marketplace officielle.
+
+Veuillez consulter le fichier LICENSE pour plus de détails.
