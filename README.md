@@ -43,3 +43,5 @@ Eliminate human error and duplicates. This module ensures **exclusive** identifi
 This repository contains only documentation and tutorial materials.
 
 The OpenCart extension mentioned here is distributed separately under its own commercial license.
+
+Please refer to the LICENSE file for more details.
