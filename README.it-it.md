@@ -10,6 +10,9 @@
 
 Elimina l'errore umano e i duplicati. Questo modulo garantisce identificatori **esclusivi** attraverso una struttura logica e scalabile, stabilendo il controllo totale sul tuo inventario.
 
+👉 **Scarica l’estensione dal OpenCart Marketplace:**  
+https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=48247
+
 ### Caratteristiche Principali:
 - **Autocompletamento:** Il sistema genera il codice istantaneamente durante la registrazione dei prodotti.
 - **Sicurezza:** Impedisce la creazione di numeri di modello duplicati.
@@ -35,6 +38,14 @@ Elimina l'errore umano e i duplicati. Questo modulo garantisce identificatori **
 | Template Disponibili | Solo 1 | **Illimitati** |
 | Intervalli Numerici | Solo 1 | **Illimitati** |
 | Prefissi/Suffissi Personalizzati | ❌ | **Illimitati** |
+
+---
+
+## Ottieni l’Estensione
+
+Puoi scaricare o acquistare l’estensione direttamente dal OpenCart Marketplace:
+
+👉 https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=48247
 
 ---
 

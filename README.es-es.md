@@ -10,6 +10,9 @@
 
 Elimine errores humanos y duplicidades. Este módulo garantiza identificadores **exclusivos** mediante una estructura lógica y escalable, estableciendo un control total sobre su inventario.
 
+👉 **Descargar la extensión en el OpenCart Marketplace:**  
+https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=48247
+
 ### Características Principales:
 - **Autocompletado:** El sistema genera el código al instante al registrar productos.
 - **Seguridad:** Evita la creación de números de modelo duplicados.
@@ -35,6 +38,14 @@ Elimine errores humanos y duplicidades. Este módulo garantiza identificadores *
 | Plantillas Disponibles | Solo 1 | **Ilimitadas** |
 | Rangos Numéricos | Solo 1 | **Ilimitados** |
 | Prefijos/Sufijos Personalizados | ❌ | **Ilimitados** |
+
+---
+
+## Obtener la Extensión
+
+Puede descargar o comprar la extensión directamente desde el OpenCart Marketplace:
+
+👉 https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=48247
 
 ---
 

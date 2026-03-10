@@ -10,6 +10,9 @@ O **Model Number Generator** é a solução definitiva para a gestão de código
 
 Elimine erros humanos e duplicidades. Este módulo assegura identificadores **exclusivos** através de uma estrutura lógica e escalável, estabelecendo o controle total do seu inventário.
 
+👉 **Baixe a extensão no OpenCart Marketplace:**  
+https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=48247
+
 ### Principais Recursos:
 - **Autopreenchimento:** O sistema gera o código instantaneamente ao cadastrar produtos.
 - **Segurança:** Impede a criação de números de modelo duplicados.
@@ -35,6 +38,14 @@ Elimine erros humanos e duplicidades. Este módulo assegura identificadores **ex
 | Templates Disponíveis | Apenas 1 | **Ilimitados** |
 | Intervalos Numéricos | Apenas 1 | **Ilimitados** |
 | Prefixos/Sufixos Customizados | ❌ | **Ilimitados** |
+
+---
+
+## Obter a Extensão
+
+Você pode baixar ou adquirir a extensão diretamente no OpenCart Marketplace:
+
+👉 https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=48247
 
 ---
 

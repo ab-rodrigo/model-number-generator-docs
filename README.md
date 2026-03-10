@@ -10,6 +10,9 @@
 
 Eliminate human error and duplicates. This module ensures **exclusive** identifiers through a logical and scalable structure, establishing total control over your inventory.
 
+👉 **Download the extension on the OpenCart Marketplace:**  
+https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=48247
+
 ### Key Features:
 - **Autofill:** The system generates the code instantly when registering products.
 - **Security:** Prevents the creation of duplicate model numbers.
@@ -38,6 +41,13 @@ Eliminate human error and duplicates. This module ensures **exclusive** identifi
 
 ---
 
+## Get the Extension
+
+You can download or purchase the extension directly from the OpenCart Marketplace:
+
+👉 https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=48247
+
+---
 ## License
 
 This repository contains only documentation and tutorial materials.

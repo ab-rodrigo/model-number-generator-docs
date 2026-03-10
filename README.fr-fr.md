@@ -10,6 +10,9 @@
 
 Éliminez les erreurs humaines et les doublons. Ce module garantit des identifiants **exclusifs** grâce à une structure logique et évolutive, établissant un contrôle total sur votre inventaire.
 
+👉 **Télécharger l’extension sur le OpenCart Marketplace :**  
+https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=48247
+
 ### Caractéristiques Principales :
 - **Remplissage automatique :** Le système génère le code instantanément lors de l'enregistrement des produits.
 - **Sécurité :** Empêche la création de numéros de modèle en double.
@@ -35,6 +38,14 @@
 | Modèles Disponibles | 1 seul | **Illimités** |
 | Plages Numériques | 1 seule | **Illimitées** |
 | Préfixes/Suffixes Personnalisés | ❌ | **Illimités** |
+
+---
+
+## Obtenir l’Extension
+
+Vous pouvez télécharger ou acheter l’extension directement depuis le OpenCart Marketplace :
+
+👉 https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=48247
 
 ---
 
