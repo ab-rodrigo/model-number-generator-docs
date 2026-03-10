@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const originalHref = this.getAttribute("href");
             const manualPath = originalHref.replace(
                 "../",
-                "../model-number-generator-doc/"
+                "../model-number-generator-docs/"
             );
 
             localStorage.setItem("user-manual-lang", manualPath);
