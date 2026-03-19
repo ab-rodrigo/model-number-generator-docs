@@ -17,6 +17,7 @@ https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id
 - **Autofill:** The system generates the code instantly when registering products.
 - **Security:** Prevents the creation of duplicate model numbers.
 - **Retroactive:** Standardize existing products in your store with a single click.
+- **Shared Sequence:** Unified numbering for product variations (size/color), ensuring global consistency across your catalog.
 - **Global:** Interface with native support for 5 languages.
 
 ---
@@ -35,6 +36,7 @@ https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id
 | Feature | Free Version | Full Version |
 | :--- | :---: | :---: |
 | Lock Model Field | ❌ | ✅ |
+| Shared Sequence (Variations) | ❌ | ✅ |
 | Available Templates | 1 Only | **Unlimited** |
 | Numeric Ranges | 1 Only | **Unlimited** |
 | Customized Prefixes/Suffixes | ❌ | **Unlimited** |

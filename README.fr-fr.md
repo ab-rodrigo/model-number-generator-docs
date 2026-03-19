@@ -14,9 +14,10 @@
 https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=48247
 
 ### Caractéristiques Principales :
-- **Remplissage automatique :** Le système génère le code instantanément lors de l'enregistrement des produits.
+- **Remplissage Automatique :** Le système génère le code instantanément lors de l'enregistrement des produits.
 - **Sécurité :** Empêche la création de numéros de modèle en double.
-- **Rétroactif :** Standardisez les produits existants de votre boutique en un seul clic.
+- **Rétroactif :** Standardisez les produits existants dans votre boutique en un seul clic.
+- **Séquence Partagée :** Numérotation unifiée pour les déclinaisons de produits (taille/couleur), garantissant une cohérence globale.
 - **Global :** Interface avec support natif pour 5 langues.
 
 ---
@@ -32,11 +33,12 @@ https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id
 
 ## Comparaison des Versions
 
-| Fonctionnalité | Version Gratuit | Version Complète |
+| Fonctionnalité | Version Gratuite | Version Complète |
 | :--- | :---: | :---: |
-| Verrouiller le champ Modèle | ❌ | ✅ |
-| Modèles Disponibles | 1 seul | **Illimités** |
-| Plages Numériques | 1 seule | **Illimitées** |
+| Verrouillage du Champ Modèle | ❌ | ✅ |
+| Séquence Partagée (Variations) | ❌ | ✅ |
+| Modèles Disponibles | 1 Seul | **Illimités** |
+| Plages Numériques | 1 Seule | **Illimitées** |
 | Préfixes/Suffixes Personnalisés | ❌ | **Illimités** |
 
 ---

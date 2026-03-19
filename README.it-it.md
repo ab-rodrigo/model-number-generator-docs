@@ -14,9 +14,10 @@ Elimina l'errore umano e i duplicati. Questo modulo garantisce identificatori **
 https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=48247
 
 ### Caratteristiche Principali:
-- **Autocompletamento:** Il sistema genera il codice istantaneamente durante la registrazione dei prodotti.
+- **Autocompilazione:** Il sistema genera il codice istantaneamente durante la registrazione dei prodotti.
 - **Sicurezza:** Impedisce la creazione di numeri di modello duplicati.
 - **Retroattivo:** Standardizza i prodotti esistenti nel tuo negozio con un solo clic.
+- **Sequenza Condivisa:** Numerazione unificata per le varianti di prodotto (taglia/colore), garantendo la coerenza globale.
 - **Global:** Interfaccia con supporto nativo per 5 lingue.
 
 ---
@@ -32,9 +33,10 @@ https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id
 
 ## Confronto Versioni
 
-| Funzionalità | Versione Gratuita | Versione Completa |
+| Caratteristica | Versione Gratuita | Versione Completa |
 | :--- | :---: | :---: |
-| Blocca Campo Modello | ❌ | ✅ |
+| Blocco del Campo Modello | ❌ | ✅ |
+| Sequenza Condivisa (Varianti) | ❌ | ✅ |
 | Template Disponibili | Solo 1 | **Illimitati** |
 | Intervalli Numerici | Solo 1 | **Illimitati** |
 | Prefissi/Suffissi Personalizzati | ❌ | **Illimitati** |
