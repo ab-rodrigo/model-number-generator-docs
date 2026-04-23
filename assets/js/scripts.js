@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const themeToggles = document.querySelectorAll(".darkModeToggle");
 
     function applyTheme(theme) {
-        htmlElement.setAttribute("data-model-number-generator-docs-bs-theme", theme);
+        htmlElement.setAttribute("data-bs-theme", theme);
         localStorage.setItem("model-number-generator-docs-bs-theme", theme);
 
         themeToggles.forEach(function (toggle) {
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     themeToggles.forEach(function (toggle) {
         toggle.addEventListener("click", function () {
-            const currentTheme = htmlElement.getAttribute("data-model-number-generator-docs-bs-theme");
+            const currentTheme = htmlElement.getAttribute("data-bs-theme");
             const newTheme = currentTheme === "dark" ? "light" : "dark";
             applyTheme(newTheme);
         });
