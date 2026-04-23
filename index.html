@@ -51,7 +51,7 @@
         (function() {
             const bust = "?t=" + new Date().getTime();
 
-            const savedLang = localStorage.getItem('user-manual-lang');
+            const savedLang = localStorage.getItem('model-number-generator-docs-user-manual-lang');
             if (savedLang && savedLang.includes('index.html')) {
                 window.location.replace(savedLang + bust);
                 return;
