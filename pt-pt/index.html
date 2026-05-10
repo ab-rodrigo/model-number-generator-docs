@@ -5,9 +5,9 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Documentação do Model Number Generator para OpenCart 4.x</title>
+	<title>Documentação do Model Number Generator para OpenCart 3.x / 4.x</title>
 
-	<meta name="description" content="Documentação oficial da extensão Model Number Generator para OpenCart 4.x. Gere automaticamente números de modelo estruturados para produtos. Disponível nas versões Free e Full. Licenciado sob GPL-3.0.">
+	<meta name="description" content="Documentação oficial da extensão Model Number Generator para OpenCart 3.x / 4.x. Gere automaticamente números de modelo estruturados para produtos. Disponível nas versões Free e Full. Licenciado sob GPL-3.0.">
 	<meta name="keywords" content="extensão OpenCart, Model Number Generator, módulo OpenCart, gerador de SKU, gerador de modelo de produto, OpenCart Free, OpenCart Full">
 	<meta name="author" content="Rodrigo Barbosa">
 	<meta name="robots" content="index, follow">
@@ -16,7 +16,7 @@
 	<link rel="canonical" href="https://ab-rodrigo.github.io/model-number-generator-docs/pt-pt/">
 
 	<meta property="og:type" content="website">
-	<meta property="og:title" content="Documentação do Model Number Generator para OpenCart 4.x">
+	<meta property="og:title" content="Documentação do Model Number Generator para OpenCart 3.x / 4.x">
 	<meta property="og:description" content="Gere automaticamente números de modelo estruturados no OpenCart. Versões Free e Full disponíveis.">
 	<meta property="og:url" content="https://ab-rodrigo.github.io/model-number-generator-docs/pt-pt/">
 	<meta property="og:site_name" content="Documentação Model Number Generator">
@@ -25,10 +25,10 @@
 	<meta property="og:image" content="https://ab-rodrigo.github.io/model-number-generator-docs/assets/social-preview.png">
 	<meta property="og:image:width" content="1200">
 	<meta property="og:image:height" content="630">
-	<meta property="og:image:alt" content="Model Number Generator para OpenCart 4.x">
+	<meta property="og:image:alt" content="Model Number Generator para OpenCart 3.x / 4.x">
 
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:title" content="Documentação do Model Number Generator para OpenCart 4.x">
+	<meta name="twitter:title" content="Documentação do Model Number Generator para OpenCart 3.x / 4.x">
 	<meta name="twitter:description" content="Gere automaticamente números de modelo estruturados no OpenCart. Versões Free e Full disponíveis.">
 	<meta name="twitter:image" content="https://ab-rodrigo.github.io/model-number-generator-docs/assets/social-preview.png">
 
@@ -55,7 +55,7 @@
             "@type": "Person",
             "name": "Rodrigo Barbosa"
         },
-        "softwareVersion": "4.x",
+        "softwareVersion": "3.x / 4.x",
         "offers": {
             "@type": "Offer",
             "url": "https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=48247",
@@ -70,7 +70,7 @@
 	<div class="container">
 		<div class="row">
 
-			<nav class="navbar navbar-expand-lg fixed-top bg-body border-bottom shadow-sm" aria-label="Model Number Generator para OpenCart 4.x">
+			<nav class="navbar navbar-expand-lg fixed-top bg-body border-bottom shadow-sm" aria-label="Model Number Generator para OpenCart 3.x / 4.x">
 				<div class="container-fluid d-flex align-items-center" style="min-height: 65px;">
 					
 					<div class="d-flex align-items-center">
@@ -79,7 +79,7 @@
 						</button>
 						<a class="navbar-brand ms-2 ms-lg-0 d-flex flex-column lh-1" href="#">
 							<span class="fw-bold fs-4 text-body">Model Number Generator</span>
-							<small class="text-body-tertiary fw-normal" style="font-size: 0.75rem;">OpenCart 4.x</small>
+							<small class="text-body-tertiary fw-normal" style="font-size: 0.75rem;">OpenCart 3.x / 4.x</small>
 						</a>
 					</div>
 
@@ -811,15 +811,9 @@
 													</td>
 												</tr>
 												<tr>
-													<td><strong>Zeros à esquerda</strong></td>
-													<td>
-														Habilita o preenchimento para padronização visual.
-													</td>
-												</tr>
-												<tr>
 													<td><strong>Comprimento</strong></td>
-													<td>Total de dígitos. <br>
-														<small class="text-muted">Ex: Comprimento 4 transforma "1" em "0001".</small>
+													<td>Define a quantidade mínima de dígitos através do preenchimento com zeros. <br>
+														<small class="text-muted">Ex.: Um comprimento de 4 transforma "1" em "0001".</small>
 													</td>
 												</tr>
 												<tr>
@@ -830,13 +824,6 @@
 										</table>
 									</div>
 								</div>
-							</div>
-
-							<div class="mt-4 p-3 bg-body-tertiary border rounded-3 d-flex align-items-center shadow-sm">
-								<i class="fa-solid fa-shield-check text-success fs-4 me-3"></i>
-								<p class="small mb-0 text-body-emphasis">
-									<i class="fa-solid fa-lightbulb text-success me-2"></i><strong class="text-success">Dica de Segurança:</strong> O sistema utiliza estes limites para controlar a <strong>não duplicidade</strong>. Ao atingir o valor máximo, será emitido um alerta impedindo novos registros para garantir a integridade dos seus dados.
-								</p>
 							</div>
 
 							<div class="mt-3 p-3 bg-body-tertiary border rounded-3 small text-body-secondary">

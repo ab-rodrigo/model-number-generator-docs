@@ -1,4 +1,4 @@
-# Model Number Generator para OpenCart 4.x
+# Model Number Generator para OpenCart 3.x / 4.x
 
 [English](README.md) | [Português (BR)](README.pt-br.md) | [Português (PT)](README.pt-pt.md) | [Español](README.es-es.md) | [Français](README.fr-fr.md) | [Italiano](README.it-it.md)
 
