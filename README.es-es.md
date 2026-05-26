@@ -17,13 +17,13 @@ https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id
 - **Autocompletar:** El sistema genera el código instantáneamente al registrar productos.
 - **Seguridad:** Evita la creación de números de modelo duplicados.
 - **Retroactivo:** Estandarice los productos existentes en su tienda con un solo clic.
-- **Secuencia Compartida:** Numeración unificada para variaciones de productos (talla/color), garantizando la consistência global.
+- **Secuencia Compartida:** Numeración unificada para variaciones de productos (talla/color), garantizando la consistencia global.
 - **Global:** Interfaz con soporte nativo para 5 idiomas.
 
 ---
 
 ## Documentación e Instalación
-### [👉 Haga clic aquí para acceder al Tutorial Completo](https://ab-rodrigo.github.io/model-number-generator-docs/)
+### [👉 Haga clic aquí para acceder al Tutorial](https://ab-rodrigo.github.io/model-number-generator-docs/)
 
 > **Qué encontrarás en la guía:**
 > * Cómo realizar la instalación.
@@ -33,7 +33,7 @@ https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id
 
 ## Comparativa de Versiones
 
-| Característica | Versión Gratuita | Versión Completa |
+| Característica | Free | Pro |
 | :--- | :---: | :---: |
 | Bloqueo del Campo Modelo | ❌ | ✅ |
 | Secuencia Compartida (Variaciones) | ❌ | ✅ |

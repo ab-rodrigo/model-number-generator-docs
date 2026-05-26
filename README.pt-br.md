@@ -23,7 +23,7 @@ https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id
 ---
 
 ## Documentação e Instalação
-### [👉 Clique aqui para acessar o Tutorial Completo](https://ab-rodrigo.github.io/model-number-generator-docs/)
+### [👉 Clique aqui para acessar o Tutorial](https://ab-rodrigo.github.io/model-number-generator-docs/)
 
 > **O que você encontrará no guia:**
 > * Como realizar a instalação.
@@ -33,7 +33,7 @@ https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id
 
 ## Comparação de Versões
 
-| Recurso | Versão Grátis | Versão Completa |
+| Recurso | Free | Pro |
 | :--- | :---: | :---: |
 | Bloqueio do Campo Modelo | ❌ | ✅ |
 | Sequência Compartilhada (Variações) | ❌ | ✅ |
