@@ -1,4 +1,10 @@
 # Model Number Generator for OpenCart 3.x / 4.x
+
+![OpenCart Version](https://img.shields.io/badge/OpenCart-4.x-blue?style=for-the-badge&logo=opencart)
+![OpenCart Version](https://img.shields.io/badge/OpenCart-3.x-blue?style=for-the-badge&logo=opencart)
+![License](https://img.shields.io/badge/License-GPL--3.0-green?style=for-the-badge)
+![Languages](https://img.shields.io/badge/Languages-5-orange?style=for-the-badge)
+
 [English](README.md) | [Português (BR)](README.pt-br.md) | [Português (PT)](README.pt-pt.md) | [Español](README.es-es.md) | [Français](README.fr-fr.md) | [Italiano](README.it-it.md)
 
 ![Model Number Generator](./assets/images/social_preview.png)
