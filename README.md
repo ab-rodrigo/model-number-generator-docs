@@ -9,32 +9,23 @@
 
 ![Model Number Generator](./assets/images/social_preview.png)
 
-Official documentation for the Model Number Generator extension for OpenCart 3.x / 4.x. Automatically generate structured product model numbers. Available in Free and Pro versions. GPL-3.0 licensed.
+Documentation for the Model Number Generator extension for OpenCart 3.x / 4.x. Automatically generate structured product model numbers. Available in Free and Pro versions. GPL-3.0 licensed.
+
+[![Download](./assets/images/en-gb/download.png)](https://www.opencart.com/index.php?route=marketplace/extension&filter_member=Rodrigoabr)
 
 ---
 
-## Welcome
-
-Learn how to install, configure, and automate the standardization of your product model numbers.
-
-* **Author**: Rodrigo Barbosa (Rodrigoab)
-* **License**: GNU General Public License v3.0 (GPL-3.0)
-* **Compatible OpenCart Versions**: 3.x / 4.x
-* **Official Extension Page**: [OpenCart Marketplace](https://www.opencart.com/index.php?route=marketplace/extension&filter_member=Rodrigoabr)
-
----
-
-## About Module
+## About
 
 ### Overview
 
-Eliminate manual and repetitive work when creating identification codes.
+Eliminate manual and repetitive work when creating product identification codes.
 
-The module ensures **unique and standardized** identifiers through an intelligent Template system. With this solution, you eradicate human errors and duplicates, establishing a logical and scalable structure for total inventory control.
+The module ensures **unique and standardized** identifiers through an intelligent Template system. With this solution, you can reduce human errors and duplicates while establishing a logical and scalable structure for better inventory control.
 
 #### Requirements
 
-Ensure you have permissions for:
+Ensure you have permission to access:
 
 - Extension Installer & Manager
 - Product Catalog
@@ -49,25 +40,16 @@ Ensure you have permissions for:
 | Prefixes | ❌ | Unlimited |
 | Suffixes | ❌ | Unlimited |
 
-[![Download](./assets/images/en-gb/download.png)](https://www.opencart.com/index.php?route=marketplace/extension&filter_member=Rodrigoabr)
-
----
-
 ### Key Features
 
-- **Smart Auto-fill**: The system identifies the default template and automatically fills the **Model** field when opening a new form, saving time and clicks.
-- **Security & Uniqueness**: Guarantees a **unique identity** for each product, preventing duplicate numbers, and can lock the **Model** field for manual editing to eliminate human errors.
-- **Retroactive Processing**: Standardize existing store items safely. The module safely generates and applies model numbers to your current products.
-- **Dynamic Templates**: Combine prefixes, intervals, and suffixes to create distinct rules by department or product category.
-- **Multi-language Interface**: Intuitive interface with native translations available in English (EN), Portuguese (PT), French (FR), Spanish (ES), and Italian (IT).
-- **Full Scalability**: Manage multiple rules simultaneously without performance loss in large databases.
-
----
-
-### Support & License
-
-- **Support**: Get help through the official marketplace page: [Get Support](https://www.opencart.com/index.php?route=marketplace/extension&filter_member=Rodrigoabr).
-- **License**: Software distributed under the terms of the [GNU General Public License v3.0 (GPL v3.0)](https://www.gnu.org/licenses/gpl-3.0.html).
+| Feature | Description |
+|:---|:---|
+| **Smart Auto-fill** | The system identifies the default template and automatically fills the **Model** field when opening a new form, saving time and clicks. |
+| **Security & Uniqueness** | Guarantees a **unique identifier** for each product, preventing duplicate numbers, and can lock the **Model** field for manual editing to eliminate human errors. |
+| **Retroactive Processing** | Standardize existing store items safely. The module generates and applies model numbers to your current products. |
+| **Dynamic Templates** | Combine prefixes, intervals, and suffixes to create distinct rules by department or product category. |
+| **Multi-language Interface** | Intuitive interface with native translations available in English (EN), Portuguese (PT), French (FR), Spanish (ES), and Italian (IT). |
+| **Full Scalability** | Manage multiple rules simultaneously without performance loss in large databases. |
 
 ---
 
@@ -92,33 +74,33 @@ Macro identifiers that precede the sequential number (e.g., `ABC-XYZ-`).
 - **Modular**: Segmented into multiple blocks.
 - **Scalable**: Add as many blocks as you wish.
 - **Optional**: Use only when necessary.
-- **Connection**: Requires a separator before the numeral.
+- **Connection**: Uses a separator between the prefix and the sequential number.
 
-### Numerical Range
+### Number Interval
 
 The mandatory sequential core (e.g., `0001`) that ensures uniqueness.
 
-- **Padding**: Left-aligned zero filling.
+- **Zero-padding**: Adds leading zeros to reach the configured length.
 - **Variable**: Customizable digit length.
 - **Ranges**: Specific rules and intervals per category.
 
 ### Suffixes
 
-Final attributes to detail versions or status (e.g., `-ASD-QWE`).
+Final attributes used to detail versions or status (e.g., `-ASD-QWE`).
 
 - **Modular**: Segmented into multiple blocks.
 - **Scalable**: Add as many blocks as you wish.
 - **Optional**: Use only when necessary.
-- **Connection**: Requires a separator before the numeral.
+- **Connection**: Uses a separator between the sequential number and the suffix.
 
 ---
 
 ### Attention: Separator Sensitivity
 
-The system processes each character literally, linking the numerical range to the unique combination of prefixes, suffixes, and separators. **Any change — such as swapping a hyphen (`-`) for a slash (`/`) — defines a new identity**, automatically restarting the numerical sequence for that specific identifier.
+The system processes each character literally, linking the number interval to the unique combination of prefixes, suffixes, and separators. **Any change — such as swapping a hyphen (`-`) for a slash (`/`) — defines a new identity** and starts a separate numerical sequence for that specific identifier group.
 
 - **Reference pattern**: `ABC-XYZ-0001-ASD-QWE`
-- **Different pattern**: `ABC/XYZ-0001-ASD-QWE` *(The slash changes the prefix; the count restarts for this new group)*
+- **Different pattern**: `ABC/XYZ-0001-ASD-QWE` *(The slash changes the prefix; the count starts separately for this new group.)*
 
 ---
 
@@ -182,7 +164,7 @@ These tabs allow you to compose the text or date elements surrounding the sequen
 
 | Parameter | Description |
 |---|---|
-| **Type** | Defines if the element will be **Fixed Text** or a **Dynamic Date**. |
+| **Type** | Defines whether the element will be **Fixed Text** or a **Dynamic Date**. |
 | **Content (Text)** | The textual value to be displayed (e.g., `PROD`). |
 | **Format (Date)** | The desired date pattern (e.g., 2-digit year + month). |
 | **Separator** | Character that joins this element to the next one within the same group. |
@@ -191,14 +173,14 @@ These tabs allow you to compose the text or date elements surrounding the sequen
 
 ---
 
-### 3. Sequential Interval
+### 3. Number Interval
 
-![Sequential Interval Configuration](./assets/images/en-gb/docs-config-interval-tab-en-gb.png)
+![Number Interval Configuration](./assets/images/en-gb/docs-config-interval-tab-en-gb.png)
 
 | Parameter | Description |
 |---|---|
 | **Name** | Internal identification (e.g., General Count, Batch 2024). |
-| **Length** | Defines the minimum number of digits by padding with zeros (e.g., length of 4 transforms "1" into "0001"). |
+| **Length** | Defines the minimum number of digits by padding with zeros (e.g., length of 4 transforms `1` into `0001`). |
 | **Min / Max** | Defines the starting point and the final count limit. |
 
 > **Tip**: If you work with variations (such as color or size), use the **Shared Sequence** option in the **Template** tab to maintain a single sequence across all products.
@@ -216,11 +198,11 @@ The Template is where you "stitch together" the previous settings.
 | **Name** | Internal identification (e.g., Mouse, Keyboard, A4 Sheets). |
 | **Prefix** | Links to the configured **Prefix** group. |
 | **Shared Sequence** | Allows different product variations to share the same numerical sequence. |
-| **Interval** | Links to the **Sequential Numbering** rule. |
+| **Interval** | Links to the configured **Number Interval** rule. |
 | **Suffix** | Links to the configured **Suffix** group. |
 | **Default** | Sets the template as the primary one for **auto-fill**. |
 
-> **Workflow Tip**: Make sure that the Prefix, Interval, and Suffix groups have already been created before finalizing this step.
+> **Workflow Tip**: Make sure that the Prefix, Number Interval, and Suffix groups have already been created before finalizing this step.
 
 ---
 
@@ -265,9 +247,8 @@ Follow the workflow below to apply automatic numbering to your products:
 
 Follow the steps below for a clean and safe uninstallation:
 
-1. **Deactivate**: Go to **Extensions > Extensions**, filter by **Modules**, locate the module, and click **Uninstall**.
-2. **Uninstall**: Locate the module in the list of installed extensions and click the **Uninstall** icon.
-3. **Delete**: Still in the installed extensions list, click **Delete**.
+1. **Uninstall**: Go to **Extensions > Extensions**, filter by **Modules**, locate the module, and click **Uninstall**.
+2. **Delete**: Locate the module in the list of installed extensions and click the **Delete** icon.
 
 > **What happens to the data?**: Uninstallation removes the module settings and files. However, the **model numbers already generated** for your products remain stored in the database to prevent loss of integrity in your records.
 
@@ -275,9 +256,15 @@ Follow the steps below for a clean and safe uninstallation:
 
 ## Enjoying the module?
 
-If the module is saving your day and optimizing your catalog, consider buying the author a coffee. This helps keep the code clean, the support fast, and provides the caffeine needed for future updates!
+If the module is saving your day and optimizing your catalog, consider buying the author a coffee. This helps support ongoing development, maintenance, and future updates.
 
 [![Buy me a coffee](./assets/images/en-us/buy_me_a_coffee.png)](https://www.paypal.com/donate/?hosted_button_id=SPQH2B32XBJUW)
+
+---
+
+### Support & License
+
+Get help through the official marketplace page: [Get Support](https://www.opencart.com/index.php?route=marketplace/extension&filter_member=Rodrigoabr).
 
 ---
 
@@ -287,7 +274,7 @@ This extension (Free and Pro versions) is licensed under the **GNU General Publi
 
 - Use and modification of the software must comply with the terms established by the GPL-3.0 license.
 - Technical support and updates are provided exclusively to original purchasers through the official OpenCart Marketplace.
-- For complete license details, please refer to the [LICENSE file]( https://github.com/ab-rodrigo/model-number-generator-docs/blob/main/LICENSE) included in this repository or visit the official page of the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.html).
+- For complete license details, please refer to the [LICENSE file](https://github.com/ab-rodrigo/model-number-generator-docs/blob/main/LICENSE) included in this repository or visit the official page of the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.html).
 
 ---
 

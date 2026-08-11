@@ -1,81 +1,65 @@
-# Generador de Números de Modelo para OpenCart 3.x / 4.x
+# Model Number Generator for OpenCart 3.x / 4.x
 
-![OpenCart Version](https://img.shields.io/badge/OpenCart-4.x-blue?style=for-the-badge&logo=opencart)
-![OpenCart Version](https://img.shields.io/badge/OpenCart-3.x-blue?style=for-the-badge&logo=opencart)
-![License](https://img.shields.io/badge/License-GPL--3.0-green?style=for-the-badge)
-![Languages](https://img.shields.io/badge/Languages-5-orange?style=for-the-badge)
+![Versión de OpenCart](https://img.shields.io/badge/OpenCart-4.x-blue?style=for-the-badge&logo=opencart)
+![Versión de OpenCart](https://img.shields.io/badge/OpenCart-3.x-blue?style=for-the-badge&logo=opencart)
+![Licencia](https://img.shields.io/badge/License-GPL--3.0-green?style=for-the-badge)
+![Idiomas](https://img.shields.io/badge/Languages-5-orange?style=for-the-badge)
 
 [English](README.md) | [Português (BR)](README.pt-br.md) | [Português (PT)](README.pt-pt.md) | [Español](README.es-es.md) | [Français](README.fr-fr.md) | [Italiano](README.it-it.md)
 
-![Generador de Números de Modelo](./assets/images/social_preview.png)
+![Model Number Generator](./assets/images/social_preview.png)
 
-Documentación oficial de la extensión Generador de Números de Modelo para OpenCart 3.x / 4.x. Genera automáticamente números de modelo de producto estructurados. Disponible en versiones Free y Pro. Licenciado bajo GPL-3.0.
+Documentación de la extensión Model Number Generator para OpenCart 3.x / 4.x. Genera automáticamente números de modelo de productos estructurados. Disponible en versiones Free y Pro. Licenciada bajo GPL-3.0.
 
----
-
-## Bienvenido
-
-Aprenda a instalar, configurar y automatizar la estandarización de los números de modelo de sus productos.
-
-* **Autor**: Rodrigo Barbosa (Rodrigoab)
-* **Licencia**: Licencia Pública General GNU v3.0 (GPL-3.0)
-* **Versiones compatibles de OpenCart**: 3.x / 4.x
-* **Página oficial de la extensión**: [OpenCart Marketplace](https://www.opencart.com/index.php?route=marketplace/extension&filter_member=Rodrigoabr)
+[![Download](./assets/images/es-es/download.png)](https://www.opencart.com/index.php?route=marketplace/extension&filter_member=Rodrigoabr)
 
 ---
 
-## Sobre el módulo
+## Acerca del módulo
 
-### Visión general
+### Descripción general
 
-Elimine el trabajo manual y repetitivo al crear códigos de identificación.
+Elimine el trabajo manual y repetitivo al crear códigos de identificación de productos.
 
-El módulo garantiza identificadores **únicos y estandarizados** mediante un sistema de plantillas inteligente. Con esta solución, se eliminan los errores humanos y los duplicados, estableciendo una estructura lógica y escalable para un control de inventario total.
+El módulo garantiza identificadores **únicos y estandarizados** mediante un sistema inteligente de plantillas. Con esta solución, puede reducir los errores humanos y los duplicados, estableciendo una estructura lógica y escalable para un mejor control del inventario.
 
 #### Requisitos
 
-Asegúrese de tener permisos para:
+Asegúrese de tener permisos para acceder a:
 
-- Instalador y Gestor de extensiones
-- Catálogo de productos
+- Extension Installer & Manager
+- Product Catalog
 
 #### Comparación de versiones
 
 | Función | Free | Pro |
 |---|:---:|:---:|
-| Bloquear campo de Modelo | ❌ | ✅ |
+| Bloquear el campo Model | ❌ | ✅ |
 | Plantillas | Solo 1 | Ilimitadas |
 | Intervalos numéricos | Solo 1 | Ilimitados |
 | Prefijos | ❌ | Ilimitados |
 | Sufijos | ❌ | Ilimitados |
 
-[![Descargar](./assets/images/en-gb/download.png)](https://www.opencart.com/index.php?route=marketplace/extension&filter_member=Rodrigoabr)
-
 ---
 
-### Características principales
+### Funciones principales
 
-- **Relleno automático inteligente**: El sistema identifica la plantilla predeterminada y rellena automáticamente el campo **Modelo** al abrir un nuevo formulario, ahorrando tiempo y clics.
-- **Seguridad y unicidad**: Garantiza una **identidad única** para cada producto, evitando números duplicados, y puede bloquear el campo **Modelo** para la edición manual con el fin de eliminar errores humanos.
-- **Procesamiento retroactivo**: Estandarice de forma segura los artículos existentes de su tienda. El módulo genera y aplica de forma segura números de modelo a sus productos actuales.
-- **Plantillas dinámicas**: Combine prefijos, intervalos y sufijos para crear reglas distintas por departamento o categoría de producto.
-- **Interfaz multilingüe**: Interfaz intuitiva con traducciones nativas disponibles en inglés (EN), portugués (PT), francés (FR), español (ES) e italiano (IT).
-- **Escalabilidad total**: Gestione múltiples reglas simultáneamente sin pérdida de rendimiento en grandes bases de datos.
-
----
-
-### Soporte y licencia
-
-- **Soporte**: Obtenga ayuda a través de la página oficial del marketplace: [Obtener soporte](https://www.opencart.com/index.php?route=marketplace/extension&filter_member=Rodrigoabr).
-- **Licencia**: Software distribuido bajo los términos de la [Licencia Pública General GNU v3.0 (GPL v3.0)](https://www.gnu.org/licenses/gpl-3.0.html).
+| Función | Descripción |
+|:---|:---|
+| **Autocompletado inteligente** | El sistema identifica la plantilla predeterminada y completa automáticamente el campo **Model** al abrir un nuevo formulario, ahorrando tiempo y clics. |
+| **Seguridad y unicidad** | Garantiza un **identificador único** para cada producto, evitando números duplicados, y puede bloquear el campo **Model** para impedir modificaciones manuales y reducir errores humanos. |
+| **Procesamiento retroactivo** | Estandarice de forma segura los productos existentes de la tienda. El módulo genera y aplica números de modelo a sus productos actuales. |
+| **Plantillas dinámicas** | Combine prefijos, intervalos y sufijos para crear reglas distintas por departamento o categoría de producto. |
+| **Interfaz multilingüe** | Interfaz intuitiva con traducciones nativas disponibles en inglés (EN), portugués (PT), francés (FR), español (ES) e italiano (IT). |
+| **Escalabilidad total** | Gestione múltiples reglas simultáneamente sin pérdida de rendimiento en bases de datos grandes. |
 
 ---
 
 ## Estructura del número de modelo
 
-La generación de códigos es modular y flexible, dividida en tres componentes que garantizan la trazabilidad total y la unicidad.
+La generación de códigos es modular y flexible, dividida en tres componentes que garantizan una trazabilidad y unicidad completas.
 
-**Estructura de ejemplo:**
+**Ejemplo de estructura:**
 
 `ABC-XYZ-0001-ASD-QWE`
 
@@ -87,38 +71,38 @@ La generación de códigos es modular y flexible, dividida en tres componentes q
 
 ### Prefijos
 
-Identificadores macro que preceden al número secuencial (ej. `ABC-XYZ-`).
+Identificadores macro que preceden al número secuencial (por ejemplo, `ABC-XYZ-`).
 
-- **Modular**: Segmentado en múltiples bloques.
+- **Modular**: Se divide en varios bloques.
 - **Escalable**: Añada tantos bloques como desee.
-- **Opcional**: Úselo solo cuando sea necesario.
-- **Conexión**: Requiere un separador antes del número.
+- **Opcional**: Utilícelo solo cuando sea necesario.
+- **Conexión**: Requiere un separador antes del número secuencial.
 
-### Rango numérico
+### Intervalo numérico
 
-El núcleo secuencial obligatorio (ej. `0001`) que garantiza la unicidad.
+El núcleo secuencial obligatorio (por ejemplo, `0001`) que garantiza la unicidad.
 
-- **Relleno**: Relleno de ceros alineado a la izquierda.
+- **Relleno con ceros**: Añade ceros a la izquierda hasta alcanzar la longitud configurada.
 - **Variable**: Longitud de dígitos personalizable.
 - **Rangos**: Reglas e intervalos específicos por categoría.
 
 ### Sufijos
 
-Atributos finales para detallar versiones o estados (ej. `-ASD-QWE`).
+Atributos finales utilizados para detallar versiones o estados (por ejemplo, `-ASD-QWE`).
 
-- **Modular**: Segmentado en múltiples bloques.
+- **Modular**: Se divide en varios bloques.
 - **Escalable**: Añada tantos bloques como desee.
-- **Opcional**: Úselo solo cuando sea necesario.
-- **Conexión**: Requiere un separador antes del número.
+- **Opcional**: Utilícelo solo cuando sea necesario.
+- **Conexión**: Requiere un separador antes del número secuencial.
 
 ---
 
-### Atención: Sensibilidad al separador
+### Atención: sensibilidad a los separadores
 
-El sistema procesa cada carácter de forma literal, vinculando el rango numérico a la combinación única de prefijos, sufijos y separadores. **Cualquier cambio —como cambiar un guión (`-`) por una barra (`/`)— define una nueva identidad**, reiniciando automáticamente la secuencia numérica para ese identificador específico.
+El sistema procesa cada carácter literalmente, vinculando el intervalo numérico a la combinación única de prefijos, sufijos y separadores. **Cualquier cambio —como sustituir un guion (`-`) por una barra (`/`)— define una nueva identidad**, reiniciando automáticamente la secuencia numérica para ese identificador específico.
 
 - **Patrón de referencia**: `ABC-XYZ-0001-ASD-QWE`
-- **Patrón diferente**: `ABC/XYZ-0001-ASD-QWE` *(La barra cambia el prefijo; el recuento se reinicia para este nuevo grupo)*
+- **Patrón diferente**: `ABC/XYZ-0001-ASD-QWE` *(La barra modifica el prefijo; el contador se reinicia para este nuevo grupo.)*
 
 ---
 
@@ -126,168 +110,173 @@ El sistema procesa cada carácter de forma literal, vinculando el rango numéric
 
 Para mantener la legibilidad en etiquetas e informes, utilice acrónimos cortos para representar categorías o marcas.
 
-- **Recomendado**: `HW-MEM-DDR4-001` *(Hardware - Memoria - DDR4)*
+- **Recomendado**: `HW-MEM-DDR4-001` *(Hardware - Memory - DDR4)*
 - **Evitar**: `HARDWARE-MEMORY-DDR4-001`
 
 ---
 
 ## Instalación
 
-Siga el flujo de trabajo a continuación para aplicar la numeración automática a sus productos:
+Siga el flujo de trabajo siguiente para aplicar la numeración automática a sus productos:
 
 1. **Descarga**: Obtenga el módulo oficial directamente desde el [OpenCart Marketplace](https://www.opencart.com/index.php?route=marketplace/extension&filter_member=Rodrigoabr).
-2. **Subida**: En el panel de administración de su tienda, vaya a **Extensiones > Instalador**, haga clic en **Subir** y seleccione el archivo descargado.
-3. **Activación**: Localice el módulo en la lista de extensiones y haga clic en el icono **Instalar** para activarlo.
+2. **Carga**: En el panel de administración de su tienda, vaya a **Extensions > Installer**, haga clic en **Upload** y seleccione el archivo descargado.
+3. **Activación**: Localice el módulo en la lista de extensiones y haga clic en el icono **Install** para activarlo.
 
-> **Consejo técnico**: Tras la activación, recuerde ir a **Extensiones > Modificaciones** y hacer clic en el botón **Actualizar** (icono azul) para limpiar la caché del sistema.
+> **Consejo técnico**: Después de la activación, recuerde ir a **Extensions > Modifications** y hacer clic en el botón **Refresh** (icono azul) para limpiar la caché del sistema.
 
 ---
 
 ## Acceso a la configuración
 
-Tras la instalación, siga este flujo de trabajo para configurar su automatización:
+Después de la instalación, siga este flujo de trabajo para configurar la automatización:
 
-1. Vaya a **Extensiones > Extensiones** en el menú lateral.
-2. Seleccione el tipo de extensión **Módulos**.
-3. Haga clic en **Editar** para abrir el panel de configuración.
-
----
-
-### 1. Ajustes generales
-
-![Configuración general](./assets/images/en-gb/docs-config-general-tab-en-gb.png)
-
-| Parámetro | Función |
-|---|---|
-| **Relleno automático** | Genera la plantilla al instante al crear productos. |
-| **Prevenir edición** | Bloquea el campo **Modelo** para evitar cambios manuales. |
-| **Estado** | Habilita o deshabilita el módulo. |
+1. Vaya a **Extensions > Extensions** en el menú lateral.
+2. Seleccione el tipo de extensión **Modules**.
+3. Haga clic en **Edit** para abrir el panel de configuración.
 
 ---
 
-### 2. Prefijo y Sufijo
+### 1. Configuración general
 
-Estas pestañas le permiten componer los elementos de texto o fecha que rodean al número secuencial.
-
-![Configuración de prefijos y sufijos](./assets/images/en-gb/docs-config-prefix-tab-en-gb.png)
-
-#### Ajustes de grupo
+![Configuración general](./assets/images/es-es/docs-config-general-tab-es-es.png)
 
 | Parámetro | Función |
 |---|---|
-| **Nombre** | Identificación interna (ej. Electrónica, Ropa). |
+| **Autocompletado** | Genera la plantilla al instante al crear productos. |
+| **Impedir edición** | Bloquea el campo **Model** para evitar cambios manuales. |
+| **Estado** | Activa o desactiva el módulo. |
+
+---
+
+### 2. Prefijo y sufijo
+
+Estas pestañas permiten componer los elementos de texto o fecha que rodean al número secuencial.
+
+![Configuración de prefijos y sufijos](./assets/images/es-es/docs-config-prefix-tab-es-es.png)
+
+#### Configuración del grupo
+
+| Parámetro | Función |
+|---|---|
+| **Nombre** | Identificación interna (por ejemplo, Electronics, Apparel). |
 | **Separador** | Carácter que une este grupo al número secuencial. |
 
 #### Composición de elementos
 
 | Parámetro | Descripción |
 |---|---|
-| **Tipo** | Define si el elemento será **Texto fijo** o una **Fecha dinámica**. |
-| **Contenido (Texto)** | El valor textual que se mostrará (ej. `PROD`). |
-| **Formato (Fecha)** | El patrón de fecha deseado (ej. año de 2 dígitos + mes). |
+| **Tipo** | Define si el elemento será **Fixed Text** o una **Dynamic Date**. |
+| **Contenido (texto)** | Valor textual que se mostrará (por ejemplo, `PROD`). |
+| **Formato (fecha)** | Patrón de fecha deseado (por ejemplo, año de 2 dígitos + mes). |
 | **Separador** | Carácter que une este elemento con el siguiente dentro del mismo grupo. |
 
-> **Consejo**: Puede añadir múltiples elementos para crear prefijos complejos, como `AÑO-CATEGORÍA-`.
+> **Consejo**: Puede añadir varios elementos para crear prefijos complejos, como `YEAR-CATEGORY-`.
 
 ---
 
 ### 3. Intervalo secuencial
 
-![Configuración del intervalo secuencial](./assets/images/en-gb/docs-config-interval-tab-en-gb.png)
+![Configuración del intervalo secuencial](./assets/images/es-es/docs-config-interval-tab-es-es.png)
 
 | Parámetro | Descripción |
 |---|---|
-| **Nombre** | Identificación interna (ej. Conteo general, Lote 2024). |
-| **Longitud** | Define el número mínimo de dígitos mediante el relleno con ceros (ej. una longitud de 4 transforma "1" en "0001"). |
-| **Mín / Máx** | Define el punto de inicio y el límite final del recuento. |
+| **Nombre** | Identificación interna (por ejemplo, General Count, Batch 2024). |
+| **Longitud** | Define el número mínimo de dígitos mediante el relleno con ceros (por ejemplo, una longitud de 4 transforma `1` en `0001`). |
+| **Mín. / Máx.** | Define el punto inicial y el límite final del contador. |
 
-> **Consejo**: Si trabaja con variaciones (como color o tamaño), utilice la opción **Secuencia compartida** en la pestaña **Plantilla** para mantener una única secuencia en todos los productos.
+> **Consejo**: Si trabaja con variaciones (como color o talla), utilice la opción **Shared Sequence** en la pestaña **Template** para mantener una única secuencia para todos los productos.
 
 ---
 
 ### 4. Plantilla
 
-La Plantilla es donde se "conectan" los ajustes anteriores.
+La plantilla es donde se "unen" las configuraciones anteriores.
 
-![Configuración de plantilla](./assets/images/en-gb/docs-config-template-tab-en-gb.png)
+![Configuración de la plantilla](./assets/images/es-es/docs-config-template-tab-es-es.png)
 
 | Parámetro | Descripción |
 |---|---|
-| **Nombre** | Identificación interna (ej. Ratón, Teclado, Hojas A4). |
-| **Prefijo** | Enlaza al grupo de **Prefijo** configurado. |
-| **Secuencia compartida** | Permite que diferentes variaciones del producto compartan la misma secuencia numérica. |
-| **Intervalo** | Enlaza a la regla de **Numeración secuencial**. |
-| **Sufijo** | Enlaza al grupo de **Sufijo** configurado. |
-| **Predeterminado** | Establece la plantilla como principal para el **relleno automático**. |
+| **Nombre** | Identificación interna (por ejemplo, Mouse, Keyboard, A4 Sheets). |
+| **Prefijo** | Se vincula al grupo de **Prefix** configurado. |
+| **Shared Sequence** | Permite que diferentes variaciones de producto compartan la misma secuencia numérica. |
+| **Intervalo** | Se vincula a la regla de **Sequential Interval** configurada. |
+| **Sufijo** | Se vincula al grupo de **Suffix** configurado. |
+| **Predeterminada** | Establece la plantilla como principal para el **auto-fill**. |
 
-> **Consejo del flujo de trabajo**: Asegúrese de que los grupos de Prefijo, Intervalo y Sufijo hayan sido creados antes de finalizar este paso.
+> **Consejo de flujo de trabajo**: Asegúrese de haber creado los grupos Prefix, Interval y Suffix antes de finalizar este paso.
 
 ---
 
 ### Secuencia compartida
 
-La opción **Secuencia compartida** permite que diferentes variaciones de un producto (como color, tamaño o versión) compartan la **misma secuencia numérica**, incluso si tienen sufijos distintos.
+La opción **Shared Sequence** permite que diferentes variaciones de un producto (como color, talla o versión) compartan la **misma secuencia numérica**, incluso si tienen sufijos distintos.
 
-Cuando está habilitada, el sistema ignora el sufijo al calcular el siguiente número disponible y considera únicamente el **prefijo**.
+Cuando está activada, el sistema ignora el sufijo al calcular el siguiente número disponible y considera únicamente el **prefijo**.
 
-- **Prefijo**: `CAMISETA-`
+- **Prefijo**: `TSHIRT-`
 - **Número**: `001`
-- **Sufijo**: `-BLA` / `-NEG`
+- **Sufijo**: `-WHT` / `-BLK`
 
 #### Comparación de comportamiento
 
 | Modo | Comportamiento | Ejemplo de resultado |
 |---|---|---|
-| **Deshabilitado** | Cada sufijo tiene su propia secuencia | `CAMISETA-001-BLA`<br>`CAMISETA-002-BLA`<br>`CAMISETA-001-NEG`<br>`CAMISETA-002-NEG` |
-| **Habilitado** | Secuencia unificada en todas las variaciones por prefijo | `CAMISETA-001-BLA`<br>`CAMISETA-002-BLA`<br>`CAMISETA-003-NEG`<br>`CAMISETA-004-NEG` |
+| **Desactivado** | Cada sufijo tiene su propia secuencia | `TSHIRT-001-WHT`<br>`TSHIRT-002-WHT`<br>`TSHIRT-001-BLK`<br>`TSHIRT-002-BLK` |
+| **Activado** | Secuencia unificada para todas las variaciones por prefijo | `TSHIRT-001-WHT`<br>`TSHIRT-002-WHT`<br>`TSHIRT-003-BLK`<br>`TSHIRT-004-BLK` |
 
-- **Cuándo usar**: Variaciones de color, variaciones de tamaño y versiones de producto.
-- **Importante**: El número debe estar inmediatamente después del prefijo. Diferentes estructuras pueden impedir la identificación correcta de la secuencia.
+- **Cuándo utilizarlo**: Variaciones de color, talla y versiones de productos.
+- **Importante**: El número debe aparecer inmediatamente después del prefijo. Las estructuras diferentes pueden impedir la correcta identificación de la secuencia.
 
 ---
 
 ## Generación de números
 
-Siga el flujo de trabajo a continuación para aplicar la numeración automática a sus productos:
+Siga el flujo de trabajo siguiente para aplicar la numeración automática a sus productos:
 
-![Interfaz de generación de modelos](./assets/images/en-gb/docs-using-en-gb.png)
+![Interfaz de generación de números de modelo](./assets/images/es-es/docs-using-es-es.png)
 
-1. **Navegación**: En el menú lateral, vaya a **Catálogo > Productos**.
-2. **Acceso**: Haga clic en **Editar** en el producto o en el botón **Añadir nuevo**.
-3. **Ubicación**: Vaya a la pestaña **Datos** y localice el campo **Modelo** en el formulario.
-4. **Generar número**: Seleccione la plantilla y haga clic en el botón **Generar**. El campo **Modelo** se rellenará.
+1. **Navegación**: En el menú lateral, vaya a **Catalog > Products**.
+2. **Acceso**: Haga clic en **Edit** en el producto o en el botón **Add New**.
+3. **Ubicación**: Vaya a la pestaña **Data** y localice el campo **Model** en el formulario.
+4. **Generar número**: Seleccione la plantilla y haga clic en el botón **Generate**. El campo **Model** se rellenará.
 
-> **Consejo de conveniencia**: Al seleccionar una plantilla que no sea la predeterminada y marcar la opción **Establecer como predeterminada**, el sistema guardará automáticamente su elección al generar el número.
+> **Consejo de comodidad**: Al seleccionar una plantilla que no sea la predeterminada y marcar la opción **Set as default**, el sistema guardará automáticamente su elección al generar el número.
 
 ---
 
 ## Desinstalación
 
-Siga los pasos a continuación para una desinstalación limpia y segura:
+Siga los pasos siguientes para realizar una desinstalación limpia y segura:
 
-1. **Desactivar**: Vaya a **Extensiones > Extensiones**, filtre por **Módulos**, localice el módulo y haga clic en **Desinstalar**.
-2. **Desinstalar**: Localice el módulo en la lista de extensiones instaladas y haga clic en el icono **Desinstalar**.
-3. **Eliminar**: Aún en la lista de extensiones instaladas, haga clic en **Eliminar**.
+1. **Desinstalar**: Vaya a **Extensions > Extensions**, filtre por **Modules**, localice el módulo y haga clic en **Uninstall**.
+2. **Eliminar**: Localice el módulo en la lista de extensiones instaladas y haga clic en el icono **Delete**.
 
-> **¿Qué ocurre con los datos?**: La desinstalación elimina la configuración y los archivos del módulo. Sin embargo, los **números de modelo ya generados** para sus productos se mantienen almacenados en la base de datos para evitar la pérdida de integridad en sus registros.
+> **¿Qué ocurre con los datos?**: La desinstalación elimina la configuración y los archivos del módulo. Sin embargo, los **números de modelo ya generados** para sus productos permanecen almacenados en la base de datos para evitar la pérdida de integridad de sus registros.
 
 ---
 
-## ¿Le gusta el módulo?
+## ¿Disfruta del módulo?
 
-Si el módulo le está solucionando el día y optimizando su catálogo, considere invitar al autor a un café. ¡Esto ayuda a mantener el código limpio, el soporte rápido y proporciona la cafeína necesaria para futuras actualizaciones!
+Si el módulo le está ayudando a optimizar su catálogo, considere invitar a un café al autor. Esto ayuda a mantener el desarrollo, el mantenimiento y las futuras actualizaciones.
 
-[![Invítame a un café](./assets/images/en-us/buy_me_a_coffee.png)](https://www.paypal.com/donate/?hosted_button_id=SPQH2B32XBJUW)
+[![Buy me a coffee](./assets/images/es-es/buy_me_a_coffee.png)](https://www.paypal.com/donate/?hosted_button_id=SPQH2B32XBJUW)
+
+---
+
+### Soporte y licencia
+
+Obtenga ayuda a través de la página oficial del Marketplace: [Obtener soporte](https://www.opencart.com/index.php?route=marketplace/extension&filter_member=Rodrigoabr).
 
 ---
 
 ## Información de licencia
 
-Esta extensión (versiones Free y Pro) está licenciada bajo la **Licencia Pública General GNU v3.0 (GPL-3.0)**.
+Esta extensión (versiones Free y Pro) está licenciada bajo la **GNU General Public License v3.0 (GPL-3.0)**.
 
-- El uso y la modificación del software deben cumplir con los términos establecidos por la licencia GPL-3.0.
+- El uso y la modificación del software deben cumplir los términos establecidos por la licencia GPL-3.0.
 - El soporte técnico y las actualizaciones se proporcionan exclusivamente a los compradores originales a través del OpenCart Marketplace oficial.
-- Para obtener todos los detalles de la licencia, consulte el [archivo LICENSE](https://github.com/ab-rodrigo/model-number-generator-docs/blob/main/LICENSE) incluido en este repositorio o visite la página oficial de la [Licencia Pública General GNU v3.0](https://www.gnu.org/licenses/gpl-3.0.html).
+- Para consultar todos los detalles de la licencia, consulte el [archivo LICENSE](https://github.com/ab-rodrigo/model-number-generator-docs/blob/main/LICENSE) incluido en este repositorio o visite la página oficial de la [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.html).
 
 ---
 

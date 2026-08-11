@@ -1,79 +1,63 @@
-# Gerador de Número de Modelo para OpenCart 3.x / 4.x
+# Model Number Generator for OpenCart 3.x / 4.x
 
-![OpenCart Version](https://img.shields.io/badge/OpenCart-4.x-blue?style=for-the-badge&logo=opencart)
-![OpenCart Version](https://img.shields.io/badge/OpenCart-3.x-blue?style=for-the-badge&logo=opencart)
-![License](https://img.shields.io/badge/License-GPL--3.0-green?style=for-the-badge)
-![Languages](https://img.shields.io/badge/Languages-5-orange?style=for-the-badge)
+![Versão do OpenCart](https://img.shields.io/badge/OpenCart-4.x-blue?style=for-the-badge&logo=opencart)
+![Versão do OpenCart](https://img.shields.io/badge/OpenCart-3.x-blue?style=for-the-badge&logo=opencart)
+![Licença](https://img.shields.io/badge/License-GPL--3.0-green?style=for-the-badge)
+![Idiomas](https://img.shields.io/badge/Languages-5-orange?style=for-the-badge)
 
 [English](README.md) | [Português (BR)](README.pt-br.md) | [Português (PT)](README.pt-pt.md) | [Español](README.es-es.md) | [Français](README.fr-fr.md) | [Italiano](README.it-it.md)
 
-![Gerador de Número de Modelo](./assets/images/social_preview.png)
+![Model Number Generator](./assets/images/social_preview.png)
 
-Documentação oficial da extensão Gerador de Número de Modelo para OpenCart 3.x / 4.x. Gere automaticamente números de modelo de produtos estruturados. Disponível nas versões Gratuita e Pro. Licenciado sob GPL-3.0.
+Documentação da extensão Model Number Generator para OpenCart 3.x / 4.x. Gere automaticamente números de modelo estruturados para produtos. Disponível nas versões Free e Pro. Licenciado sob a GPL-3.0.
 
----
-
-## Bem-vindo
-
-Aprenda a instalar, configurar e automatizar a padronização dos números de modelo dos seus produtos.
-
-* **Autor**: Rodrigo Barbosa (Rodrigoab)
-* **Licença**: Licença Pública Geral GNU v3.0 (GPL-3.0)
-* **Versões compatíveis do OpenCart**: 3.x / 4.x
-* **Página oficial da extensão**: [OpenCart Marketplace](https://www.opencart.com/index.php?route=marketplace/extension&filter_member=Rodrigoabr)
+[![Download](./assets/images/pt-pt/download.png)](https://www.opencart.com/index.php?route=marketplace/extension&filter_member=Rodrigoabr)
 
 ---
 
-## Sobre o Módulo
+## Sobre o módulo
 
-### Visão Geral
+### Visão geral
 
-Elimine o trabalho manual e repetitivo na criação de códigos de identificação.
+Elimine o trabalho manual e repetitivo na criação de códigos de identificação de produtos.
 
-O módulo garante identificadores **únicos e padronizados** através de um sistema inteligente de Modelos (Templates). Com esta solução, erradica erros humanos e duplicados, estabelecendo uma estrutura lógica e escalável para o controlo total do seu stock.
+O módulo garante identificadores **únicos e normalizados** através de um sistema inteligente de Templates. Com esta solução, pode reduzir os erros humanos e as duplicações, estabelecendo uma estrutura lógica e escalável para um melhor controlo do inventário.
 
 #### Requisitos
 
-Certifique-se de que possui permissões para:
+Certifique-se de que possui permissões para aceder a:
 
-- Instalador e Gestor de Extensões
-- Catálogo de Produtos
+- Extension Installer & Manager
+- Product Catalog
 
-#### Comparativo de Versões
+#### Comparação de versões
 
-| Funcionalidade | Gratuita | Pro |
+| Funcionalidade | Free | Pro |
 |---|:---:|:---:|
-| Bloquear campo Modelo | ❌ | ✅ |
-| Modelos (Templates) | Apenas 1 | Ilimitados |
-| Intervalos Numéricos | Apenas 1 | Ilimitados |
+| Bloquear campo Model | ❌ | ✅ |
+| Templates | Apenas 1 | Ilimitados |
+| Intervalos numéricos | Apenas 1 | Ilimitados |
 | Prefixos | ❌ | Ilimitados |
 | Sufixos | ❌ | Ilimitados |
 
-[![Descarregar](./assets/images/en-gb/download.png)](https://www.opencart.com/index.php?route=marketplace/extension&filter_member=Rodrigoabr)
+---
+
+### Principais funcionalidades
+
+| Funcionalidade | Descrição |
+|:---|:---|
+| **Preenchimento automático inteligente** | O sistema identifica o template predefinido e preenche automaticamente o campo **Model** ao abrir um novo formulário, poupando tempo e cliques. |
+| **Segurança e exclusividade** | Garante um **identificador único** para cada produto, evitando números duplicados, e pode bloquear o campo **Model** para impedir alterações manuais e eliminar erros humanos. |
+| **Processamento retroativo** | Normalize com segurança os produtos existentes na loja. O módulo gera e aplica números de modelo aos seus produtos atuais. |
+| **Templates dinâmicos** | Combine prefixos, intervalos e sufixos para criar regras distintas por departamento ou categoria de produto. |
+| **Interface multilingue** | Interface intuitiva com traduções nativas disponíveis em inglês (EN), português (PT), francês (FR), espanhol (ES) e italiano (IT). |
+| **Escalabilidade total** | Gira várias regras em simultâneo sem perda de desempenho em bases de dados de grandes dimensões. |
 
 ---
 
-### Principais Funcionalidades
+## Estrutura do número de modelo
 
-- **Preenchimento automático inteligente**: O sistema identifica o modelo predefinido e preenche automaticamente o campo **Modelo** ao abrir um novo formulário, poupando tempo e cliques.
-- **Segurança e Unicidade**: Garante uma **identidade única** para cada produto, evitando números duplicados, e pode bloquear o campo **Modelo** contra edição manual para eliminar erros humanos.
-- **Processamento Retroativo**: Padronize os artigos existentes da loja com segurança. O módulo gera e aplica números de modelo aos seus produtos atuais de forma segura.
-- **Modelos Dinâmicos**: Combine prefixos, intervalos e sufixos para criar regras distintas por departamento ou categoria de produto.
-- **Interface Multi-idioma**: Interface intuitiva com traduções nativas disponíveis em inglês (EN), português (PT), francês (FR), espanhol (ES) e italiano (IT).
-- **Escalabilidade Total**: Gerido múltiplas regras simultaneamente sem perda de desempenho em grandes bases de dados.
-
----
-
-### Suporte e Licença
-
-- **Suporte**: Obtenha ajuda através da página oficial no marketplace: [Obter Suporte](https://www.opencart.com/index.php?route=marketplace/extension&filter_member=Rodrigoabr).
-- **Licença**: Software distribuído sob os termos da [Licença Pública Geral GNU v3.0 (GPL v3.0)](https://www.gnu.org/licenses/gpl-3.0.html).
-
----
-
-## Estrutura do Número de Modelo
-
-A geração do código é modular e flexível, dividida em três componentes que garantem rastreabilidade total e unicidade.
+A geração dos códigos é modular e flexível, dividida em três componentes que garantem uma rastreabilidade e exclusividade completas.
 
 **Exemplo de estrutura:**
 
@@ -81,213 +65,218 @@ A geração do código é modular e flexível, dividida em três componentes que
 
 | Componente | Tipo | Exemplo |
 |---|---|---|
-| **Prefixo** | Macroidentificador | `ABC-XYZ-` |
-| **Sequencial** | Núcleo Numérico | `0001` |
-| **Sufixo** | Atributos Finais | `-ASD-QWE` |
+| **Prefixo** | Identificador macro | `ABC-XYZ-` |
+| **Sequencial** | Núcleo numérico | `0001` |
+| **Sufixo** | Atributos finais | `-ASD-QWE` |
 
 ### Prefixos
 
-Macroidentificadores que antecedem o número sequencial (ex.: `ABC-XYZ-`).
+Identificadores macro que precedem o número sequencial (por exemplo, `ABC-XYZ-`).
 
-- **Modular**: Segmentado em múltiplos blocos.
-- **Escalável**: Adicione quantos blocos desejar.
+- **Modular**: Dividido em vários blocos.
+- **Escalável**: Adicione tantos blocos quantos desejar.
 - **Opcional**: Utilize apenas quando necessário.
-- **Conexão**: Requer um separador antes do número.
+- **Ligação**: Requer um separador antes do número sequencial.
 
-### Intervalo Numérico
+### Intervalo numérico
 
-O núcleo sequencial obrigatório (ex.: `0001`) que garante a unicidade.
+O núcleo sequencial obrigatório (por exemplo, `0001`) que garante a exclusividade.
 
-- **Preenchimento**: Preenchimento com zeros alinhado à esquerda.
-- **Variável**: Comprimento de dígitos personalizável.
+- **Preenchimento com zeros**: Adiciona zeros à esquerda até atingir o comprimento configurado.
+- **Variável**: Comprimento dos dígitos personalizável.
 - **Intervalos**: Regras e intervalos específicos por categoria.
 
 ### Sufixos
 
-Atributos finais para detalhar versões ou estado (ex.: `-ASD-QWE`).
+Atributos finais utilizados para detalhar versões ou estados (por exemplo, `-ASD-QWE`).
 
-- **Modular**: Segmentado em múltiplos blocos.
-- **Escalável**: Adicione quantos blocos desejar.
+- **Modular**: Dividido em vários blocos.
+- **Escalável**: Adicione tantos blocos quantos desejar.
 - **Opcional**: Utilize apenas quando necessário.
-- **Conexão**: Requer um separador antes do número.
+- **Ligação**: Requer um separador antes do número sequencial.
 
 ---
 
-### Atenção: Sensibilidade ao Separador
+### Atenção: sensibilidade aos separadores
 
-O sistema processa cada caráter literalmente, vinculando o intervalo numérico à combinação única de prefixos, sufixos e separadores. **Qualquer alteração — como trocar um hífen (`-`) por uma barra (`/`) — define uma nova identidade**, reiniciando automaticamente a sequência numérica para aquele identificador específico.
+O sistema processa cada carácter literalmente, associando o intervalo numérico à combinação exclusiva de prefixos, sufixos e separadores. **Qualquer alteração — como substituir um hífen (`-`) por uma barra (`/`) — define uma nova identidade**, reiniciando automaticamente a sequência numérica para esse identificador específico.
 
 - **Padrão de referência**: `ABC-XYZ-0001-ASD-QWE`
-- **Padrão diferente**: `ABC/XYZ-0001-ASD-QWE` *(A barra altera o prefixo; a contagem recomeça para este novo grupo)*
+- **Padrão diferente**: `ABC/XYZ-0001-ASD-QWE` *(A barra altera o prefixo; a contagem reinicia para este novo grupo.)*
 
 ---
 
-### Dica de Padronização
+### Dica de normalização
 
 Para manter a legibilidade em etiquetas e relatórios, utilize siglas curtas para representar categorias ou marcas.
 
-- **Recomendado**: `HW-MEM-DDR4-001` *(Hardware - Memória - DDR4)*
-- **Evite**: `HARDWARE-MEMORY-DDR4-001`
+- **Recomendado**: `HW-MEM-DDR4-001` *(Hardware - Memory - DDR4)*
+- **Evitar**: `HARDWARE-MEMORY-DDR4-001`
 
 ---
 
 ## Instalação
 
-Siga o fluxo de trabalho abaixo para aplicar a numeração automática aos seus produtos:
+Siga o fluxo abaixo para aplicar a numeração automática aos seus produtos:
 
 1. **Download**: Obtenha o módulo oficial diretamente no [OpenCart Marketplace](https://www.opencart.com/index.php?route=marketplace/extension&filter_member=Rodrigoabr).
-2. **Envio**: No painel de administração da sua loja, aceda a **Extensões > Instalador**, clique em **Carregar** e selecione o ficheiro descarregado.
-3. **Ativação**: Localize o módulo na lista de extensões e clique no ícone **Instalar** para o ativar.
+2. **Upload**: No painel de administração da sua loja, aceda a **Extensions > Installer**, clique em **Upload** e selecione o ficheiro descarregado.
+3. **Ativação**: Localize o módulo na lista de extensões e clique no ícone **Install** para o ativar.
 
-> **Dica Técnica**: Após a ativação, lembre-se de ir a **Extensões > Modificações** e clicar no botão **Atualizar** (ícone azul) para limpar a cache do sistema.
-
----
-
-## Aceder às Configurações
-
-Após a instalação, siga este fluxo de trabalho para configurar a sua automação:
-
-1. Aceda a **Extensões > Extensões** no menu lateral.
-2. Selecione o tipo de extensão **Módulos**.
-3. Clique em **Editar** para abrir o painel de configuração.
+> **Dica técnica**: Após a ativação, lembre-se de aceder a **Extensions > Modifications** e clicar no botão **Refresh** (ícone azul) para limpar a cache do sistema.
 
 ---
 
-### 1. Configurações Gerais
+## Aceder às configurações
 
-![Configuração Geral](./assets/images/en-gb/docs-config-general-tab-en-gb.png)
+Após a instalação, siga este fluxo para configurar a automatização:
+
+1. Aceda a **Extensions > Extensions** no menu lateral.
+2. Selecione o tipo de extensão **Modules**.
+3. Clique em **Edit** para abrir o painel de configuração.
+
+---
+
+### 1. Configurações gerais
+
+![Configuração geral](./assets/images/pt-pt/docs-config-general-tab-pt-pt.png)
 
 | Parâmetro | Função |
 |---|---|
-| **Preenchimento automático** | Gera o modelo instantaneamente ao criar produtos. |
-| **Impedir edição** | Bloqueia o campo **Modelo** para evitar alterações manuais. |
+| **Preenchimento automático** | Gera o template instantaneamente ao criar produtos. |
+| **Impedir edição** | Bloqueia o campo **Model** para impedir alterações manuais. |
 | **Estado** | Ativa ou desativa o módulo. |
 
 ---
 
-### 2. Prefixo e Sufixo
+### 2. Prefixo e sufixo
 
-Estes separadores permitem compor os elementos de texto ou data que envolvem o número sequencial.
+Estas abas permitem compor os elementos de texto ou data que envolvem o número sequencial.
 
-![Configuração de Prefixo e Sufixo](./assets/images/en-gb/docs-config-prefix-tab-en-gb.png)
+![Configuração de prefixos e sufixos](./assets/images/pt-pt/docs-config-prefix-tab-pt-pt.png)
 
-#### Configurações do Grupo
+#### Configurações do grupo
 
 | Parâmetro | Função |
 |---|---|
-| **Nome** | Identificação interna (ex.: Eletrónica, Vestuário). |
-| **Separador** | Caráter que une este grupo ao número sequencial. |
+| **Nome** | Identificação interna (por exemplo, Electronics, Apparel). |
+| **Separador** | Carácter que liga este grupo ao número sequencial. |
 
-#### Composição dos Elementos
-
-| Parâmetro | Descrição |
-|---|---|
-| **Tipo** | Define se o elemento será **Texto Fixo** ou uma **Data Dinâmica**. |
-| **Conteúdo (Texto)** | O valor textual a ser exibido (ex.: `PROD`). |
-| **Formato (Data)** | O padrão de data desejado (ex.: ano com 2 dígitos + mês). |
-| **Separador** | Caráter que une este elemento ao próximo dentro do mesmo grupo. |
-
-> **Dica**: Pode adicionar múltiplos elementos para criar prefixos complexos, como `ANO-CATEGORIA-`.
-
----
-
-### 3. Intervalo Sequencial
-
-![Configuração do Intervalo Sequencial](./assets/images/en-gb/docs-config-interval-tab-en-gb.png)
+#### Composição dos elementos
 
 | Parâmetro | Descrição |
 |---|---|
-| **Nome** | Identificação interna (ex.: Contagem Geral, Lote 2024). |
-| **Comprimento** | Define o número mínimo de dígitos preenchendo com zeros (ex.: comprimento 4 transforma "1" em "0001"). |
-| **Mín / Mág** | Define o ponto inicial e o limite final da contagem. |
+| **Tipo** | Define se o elemento será **Fixed Text** ou uma **Dynamic Date**. |
+| **Conteúdo (Texto)** | Valor textual a apresentar (por exemplo, `PROD`). |
+| **Formato (Data)** | Formato de data pretendido (por exemplo, ano com 2 dígitos + mês). |
+| **Separador** | Carácter que liga este elemento ao seguinte dentro do mesmo grupo. |
 
-> **Dica**: Se trabalha com variações (como cor ou tamanho), utilize a opção **Sequência Partilhada** no separador **Modelo** para manter uma única sequência em todos os produtos.
+> **Dica**: Pode adicionar vários elementos para criar prefixos complexos, como `YEAR-CATEGORY-`.
 
 ---
 
-### 4. Modelo (Template)
+### 3. Intervalo sequencial
 
-O Modelo é onde "liga" as configurações anteriores.
-
-![Configuração do Modelo](./assets/images/en-gb/docs-config-template-tab-en-gb.png)
+![Configuração do intervalo sequencial](./assets/images/pt-pt/docs-config-interval-tab-pt-pt.png)
 
 | Parâmetro | Descrição |
 |---|---|
-| **Nome** | Identificação interna (ex.: Rato, Teclado, Folhas A4). |
-| **Prefixo** | Associa ao grupo de **Prefixo** configurado. |
-| **Sequência Partilhada** | Permite que diferentes variações do produto partilhem a mesma sequência numérica. |
-| **Intervalo** | Associa à regra de **Numeração Sequencial**. |
-| **Sufixo** | Associa ao grupo de **Sufixo** configurado. |
-| **Predefinido** | Define o modelo como principal para o **preenchimento automático**. |
+| **Nome** | Identificação interna (por exemplo, General Count, Batch 2024). |
+| **Comprimento** | Define o número mínimo de dígitos através do preenchimento com zeros (por exemplo, um comprimento de 4 transforma `1` em `0001`). |
+| **Mín. / Máx.** | Define o ponto inicial e o limite final da contagem. |
 
-> **Dica de Fluxo de Trabalho**: Certifique-se de que os grupos de Prefixo, Intervalo e Sufixo já foram criados antes de finalizar esta etapa.
+> **Dica**: Se trabalhar com variantes (como cor ou tamanho), utilize a opção **Shared Sequence** no separador **Template** para manter uma única sequência para todos os produtos.
 
 ---
 
-### Sequência Partilhada
+### 4. Template
 
-A opção **Sequência Partilhada** permite que diferentes variações de um produto (como cor, tamanho ou versão) partilhem a **mesma sequência numérica**, mesmo que possuam sufixos distintos.
+O Template é onde as configurações anteriores são "ligadas".
+
+![Configuração do template](./assets/images/pt-pt/docs-config-template-tab-pt-pt.png)
+
+| Parâmetro | Descrição |
+|---|---|
+| **Nome** | Identificação interna (por exemplo, Mouse, Keyboard, A4 Sheets). |
+| **Prefixo** | Liga ao grupo **Prefix** configurado. |
+| **Shared Sequence** | Permite que diferentes variantes de produto partilhem a mesma sequência numérica. |
+| **Intervalo** | Liga à regra **Sequential Interval** configurada. |
+| **Sufixo** | Liga ao grupo **Suffix** configurado. |
+| **Predefinido** | Define o template como principal para o **auto-fill**. |
+
+> **Dica de fluxo de trabalho**: Certifique-se de que os grupos Prefix, Interval e Suffix já foram criados antes de finalizar este passo.
+
+---
+
+### Sequência partilhada
+
+A opção **Shared Sequence** permite que diferentes variantes de um produto (como cor, tamanho ou versão) partilhem a **mesma sequência numérica**, mesmo que tenham sufixos diferentes.
 
 Quando ativada, o sistema ignora o sufixo ao calcular o próximo número disponível e considera apenas o **prefixo**.
 
-- **Prefixo**: `CAMISA-`
+- **Prefixo**: `TSHIRT-`
 - **Número**: `001`
-- **Sufixo**: `-BRA` / `-PRE`
+- **Sufixo**: `-WHT` / `-BLK`
 
-#### Comparativo de Comportamento
+#### Comparação de comportamento
 
-| Modo | Comportamento | Exemplo de Resultado |
+| Modo | Comportamento | Exemplo de resultado |
 |---|---|---|
-| **Desativado** | Cada sufixo possui a sua própria sequência | `CAMISA-001-BRA`<br>`CAMISA-002-BRA`<br>`CAMISA-001-PRE`<br>`CAMISA-002-PRE` |
-| **Ativado** | Sequência unificada entre todas as variações por prefixo | `CAMISA-001-BRA`<br>`CAMISA-002-BRA`<br>`CAMISA-003-PRE`<br>`CAMISA-004-PRE` |
+| **Desativado** | Cada sufixo possui a sua própria sequência | `TSHIRT-001-WHT`<br>`TSHIRT-002-WHT`<br>`TSHIRT-001-BLK`<br>`TSHIRT-002-BLK` |
+| **Ativado** | Sequência unificada para todas as variantes por prefixo | `TSHIRT-001-WHT`<br>`TSHIRT-002-WHT`<br>`TSHIRT-003-BLK`<br>`TSHIRT-004-BLK` |
 
-- **Quando utilizar**: Variações de cor, variações de tamanho e versões de produto.
+- **Quando utilizar**: Variantes de cor, tamanho e versões de produtos.
 - **Importante**: O número deve estar imediatamente após o prefixo. Estruturas diferentes podem impedir a identificação correta da sequência.
 
 ---
 
-## Gerar Números
+## Gerar números
 
-Siga o fluxo de trabalho abaixo para aplicar a numeração automática aos seus produtos:
+Siga o fluxo abaixo para aplicar a numeração automática aos seus produtos:
 
-![Interface de Geração de Modelos](./assets/images/en-gb/docs-using-en-gb.png)
+![Interface de geração de números de modelo](./assets/images/pt-pt/docs-using-pt-pt.png)
 
-1. **Navegação**: No menu lateral, aceda a **Catálogo > Produtos**.
-2. **Acesso**: Clique em **Editar** no produto ou no botão **Adicionar Novo**.
-3. **Localização**: Aceda ao separador **Dados** e localize o campo **Modelo** no formulário.
-4. **Gerar Número**: Selecione o modelo e clique no botão **Gerar**. O campo **Modelo** será preenchido.
+1. **Navegação**: No menu lateral, aceda a **Catalog > Products**.
+2. **Acesso**: Clique em **Edit** no produto ou no botão **Add New**.
+3. **Localização**: Aceda ao separador **Data** e localize o campo **Model** no formulário.
+4. **Gerar número**: Selecione o template e clique no botão **Generate**. O campo **Model** será preenchido.
 
-> **Dica de Praticidade**: Ao selecionar um modelo diferente do predefinido e marcar a opção **Definir como predefinido**, o sistema guardará automaticamente a sua escolha ao gerar o número.
+> **Dica de conveniência**: Ao selecionar um template que não seja o predefinido e marcar a opção **Set as default**, o sistema guardará automaticamente a sua escolha ao gerar o número.
 
 ---
 
 ## Desinstalação
 
-Siga os passos abaixo para uma desinstalação limpa e segura:
+Siga os passos abaixo para realizar uma desinstalação limpa e segura:
 
-1. **Desativar**: Aceda a **Extensões > Extensões**, filtre por **Módulos**, localize o módulo e clique em **Desinstalar**.
-2. **Desinstalar**: Localize o módulo na lista de extensões instaladas e clique no ícone **Desinstalar**.
-3. **Eliminar**: Ainda na lista de extensões instaladas, clique em **Eliminar**.
+1. **Desinstalar**: Aceda a **Extensions > Extensions**, filtre por **Modules**, localize o módulo e clique em **Uninstall**.
+2. **Eliminar**: Localize o módulo na lista de extensões instaladas e clique no ícone **Delete**.
 
-> **O que acontece aos dados?**: A desinstalação remove as configurações e ficheiros do módulo. No entanto, os **números de modelo já gerados** para os seus produtos permanecem guardados na base de dados para evitar a perda de integridade dos seus registos.
-
----
-
-## Gostou do módulo?
-
-Se o módulo está a facilitar o seu dia e a otimizar o seu catálogo, considere pagar um café ao autor. Isto ajuda a manter o código limpo, o suporte rápido e fornece a cafeína necessária para futuras atualizações!
-
-[![Pague um café](./assets/images/en-us/buy_me_a_coffee.png)](https://www.paypal.com/donate/?hosted_button_id=SPQH2B32XBJUW)
+> **O que acontece aos dados?**: A desinstalação remove as configurações e os ficheiros do módulo. No entanto, os **números de modelo já gerados** para os seus produtos permanecem armazenados na base de dados para evitar a perda de integridade dos seus registos.
 
 ---
 
-## Informações sobre a Licença
+## Está a gostar do módulo?
 
-Esta extensão (versões Gratuita e Pro) está licenciada sob a **Licença Pública Geral GNU v3.0 (GPL-3.0)**.
+Se o módulo está a ajudar a otimizar o seu catálogo, considere oferecer um café ao autor. Isto ajuda a manter o desenvolvimento, a manutenção e as futuras atualizações.
 
-- O uso e a modificação do software devem estar em conformidade com os termos estabelecidos pela licença GPL-3.0.
-- Suporte técnico e atualizações são fornecidos exclusivamente aos compradores originais através do OpenCart Marketplace oficial.
-- Para obter todos os detalhes da licença, consulte o [ficheiro LICENSE](https://github.com/ab-rodrigo/model-number-generator-docs/blob/main/LICENSE) incluído neste repositório ou visite a página oficial da [Licença Pública Geral GNU v3.0](https://www.gnu.org/licenses/gpl-3.0.html).
+[![Buy me a coffee](./assets/images/pt-pt/buy_me_a_coffee.png)](https://www.paypal.com/donate/?hosted_button_id=SPQH2B32XBJUW)
+
+---
+
+### Suporte e licença
+
+Obtenha suporte através da página oficial do Marketplace: [Obter suporte](https://www.opencart.com/index.php?route=marketplace/extension&filter_member=Rodrigoabr).
+
+---
+
+## Informações sobre a licença
+
+Esta extensão (versões Free e Pro) está licenciada ao abrigo da **GNU General Public License v3.0 (GPL-3.0)**.
+
+- A utilização e modificação do software devem cumprir os termos estabelecidos pela licença GPL-3.0.
+- O suporte técnico e as atualizações são fornecidos exclusivamente aos compradores originais através do OpenCart Marketplace oficial.
+- Para consultar todos os detalhes da licença, consulte o [ficheiro LICENSE](https://github.com/ab-rodrigo/model-number-generator-docs/blob/main/LICENSE) incluído neste repositório ou visite a página oficial da [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.html).
 
 ---
 
